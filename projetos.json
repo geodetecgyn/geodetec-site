@@ -1,15 +1,111 @@
 {
   "categorias": [
+    "Agrimensura e topografia",
+    "Laudos (ITR, VTN, PRODES)",
     "Fauna",
-    "Laudos ITR/VTN",
     "Georreferenciamento",
     "CAR/DAI",
     "Licenciamento",
-    "Flora",
-    "Topografia"
+    "Flora"
   ],
   "credito_satelite": "Imagens: Google Earth Pro (Maxar/Airbus)",
   "projetos": [
+    {
+      "id": "planialtimetrico-rede-eletrica",
+      "categoria": "Agrimensura e topografia",
+      "titulo": "Levantamento planialtimétrico cadastral – rede de média tensão",
+      "periodo": "Empreendimento industrial em Goiás",
+      "servico": "topografia-drone",
+      "descricao": "Rede elétrica levantada poste a poste com GNSS RTK: cotas, vãos, curvas de nível mestras (5 m) e intermediárias (1 m), planta cadastral e perfil longitudinal do terreno em pranchas A1, sobre MDE e imagem de satélite.",
+      "imagens": [
+        {
+          "pasta": "projetos",
+          "arquivo": "planialtimetrico_rede",
+          "largura": 2000,
+          "altura": 951,
+          "alt": "Planta planialtimétrica sobre imagem de satélite: linha de transmissão em magenta, postes numerados em amarelo e curvas de nível em preto e branco.",
+          "legenda": "Planta cadastral com postes, cotas e curvas de nível.",
+          "satelite": true,
+          "legenda_mapa": [
+            [
+              "#FF3EC8",
+              "Linha de média tensão"
+            ],
+            [
+              "#FFE95A",
+              "Postes"
+            ],
+            [
+              "#FFFFFF",
+              "Curvas de nível"
+            ]
+          ]
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "campo-drone",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Drone e controle remoto prontos para voo sobre a tampa de uma caminhonete, com vegetação ao fundo.",
+          "legenda": "Equipamento de aerofotogrametria em campo."
+        }
+      ]
+    },
+    {
+      "id": "laudo-prodes-imovel-rural",
+      "categoria": "Laudos (ITR, VTN, PRODES)",
+      "titulo": "Laudo PRODES – análise multitemporal de imóvel rural em Goiás",
+      "periodo": "Série histórica 2004–2024",
+      "servico": "laudo-prodes-analise-multitemporal",
+      "descricao": "Polígonos de desmatamento do PRODES Cerrado recortados sobre o CAR, classificados um a um por risco com série de imagens desde antes do marco de 22/07/2008. Entrega com laudo, mapas, comparação antes/depois e KML.",
+      "imagens": [
+        {
+          "pasta": "projetos",
+          "arquivo": "prodes_situacao",
+          "largura": 862,
+          "altura": 1285,
+          "alt": "Imóvel rural sobre imagem de satélite com 13 polígonos numerados, coloridos em verde, amarelo, laranja e vermelho conforme o risco, e limite em amarelo.",
+          "legenda": "Polígonos PRODES classificados por risco.",
+          "satelite": true,
+          "legenda_mapa": [
+            [
+              "#2EBD3F",
+              "Risco baixo"
+            ],
+            [
+              "#F5C400",
+              "Risco médio"
+            ],
+            [
+              "#FF8A00",
+              "Risco alto"
+            ],
+            [
+              "#E02424",
+              "Em regeneração"
+            ]
+          ]
+        },
+        {
+          "pasta": "projetos",
+          "arquivo": "prodes_2008",
+          "largura": 740,
+          "altura": 1032,
+          "alt": "Imagem em preto e branco de setembro de 2008 com os polígonos numerados.",
+          "legenda": "Set/2008 – antes do marco do Código Florestal.",
+          "satelite": true
+        },
+        {
+          "pasta": "projetos",
+          "arquivo": "prodes_2024",
+          "largura": 740,
+          "altura": 1032,
+          "alt": "Imagem colorida de 2024 com os mesmos polígonos numerados.",
+          "legenda": "2024 – situação atual.",
+          "satelite": true
+        }
+      ]
+    },
     {
       "id": "fauna-campanhas-goias",
       "categoria": "Fauna",
@@ -102,7 +198,7 @@
     },
     {
       "id": "laudo-itr-vtn-goias",
-      "categoria": "Laudos ITR/VTN",
+      "categoria": "Laudos (ITR, VTN, PRODES)",
       "titulo": "Laudo de ITR e VTN – imóvel rural em Goiás",
       "periodo": "Exercícios 2021–2025",
       "servico": "laudo-itr-vtn",
@@ -179,6 +275,55 @@
           "alt": "Imagem de satélite do imóvel em 2024, com perímetro em amarelo e limites de vegetação em verde.",
           "legenda": "Série histórica – 2024.",
           "satelite": true
+        }
+      ]
+    },
+    {
+      "id": "divulgacao",
+      "oculto": true,
+      "categoria": "",
+      "titulo": "Nas redes",
+      "descricao": "",
+      "imagens": [
+        {
+          "pasta": "divulgacao",
+          "arquivo": "anuncio-precisao",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Arte de divulgação: Precisão que gera segurança, com lista de serviços de georreferenciamento, drone e licenciamento.",
+          "legenda": "Precisão que gera segurança"
+        },
+        {
+          "pasta": "divulgacao",
+          "arquivo": "anuncio-suporte-tecnico",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Arte de divulgação: Suporte técnico para profissionais do setor fundiário e ambiental.",
+          "legenda": "Suporte técnico a profissionais"
+        },
+        {
+          "pasta": "divulgacao",
+          "arquivo": "anuncio-parceiro-tecnico",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Arte de divulgação: Parceiro técnico em georreferenciamento, topografia, SIGEF e CAR.",
+          "legenda": "Parceiro técnico em georreferenciamento"
+        },
+        {
+          "pasta": "divulgacao",
+          "arquivo": "anuncio-regularizacao",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Arte de divulgação: Regularização fundiária com responsabilidade – CCIR, ITR, retificação, desmembramento.",
+          "legenda": "Regularização fundiária"
+        },
+        {
+          "pasta": "divulgacao",
+          "arquivo": "anuncio-regularizacao-2",
+          "largura": 900,
+          "altura": 1600,
+          "alt": "Arte de divulgação: Regularização fundiária, do papel ao georreferenciado, com lista de serviços.",
+          "legenda": "Regularização fundiária – serviços"
         }
       ]
     }

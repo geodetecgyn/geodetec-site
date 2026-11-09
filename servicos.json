@@ -2,9 +2,15 @@
   "grupos": [
     {
       "id": "fundiario",
-      "titulo": "Regularização fundiária e campo",
-      "curto": "Fundiário e campo",
+      "titulo": "Agrimensura e regularização fundiária",
+      "curto": "Agrimensura",
       "resumo": "Da base cartográfica à materialização das áreas no campo."
+    },
+    {
+      "id": "geo",
+      "titulo": "Geotecnologia, drone e laudos",
+      "curto": "Geo e laudos",
+      "resumo": "Drone, GNSS, satélite e laudos com ART."
     },
     {
       "id": "ambiental",
@@ -23,12 +29,6 @@
       "titulo": "Fauna e flora",
       "curto": "Fauna e flora",
       "resumo": "Equipe de biólogos e engenheiros em campo."
-    },
-    {
-      "id": "geo",
-      "titulo": "Geotecnologia e laudos",
-      "curto": "Geo e laudos",
-      "resumo": "Drone, GNSS, satélite e laudos com ART."
     }
   ],
   "servicos": [
@@ -51,6 +51,7 @@
         "Levantamento de campo com receptores GNSS RTK.",
         "Processamento, planilha de dados e submissão ao SIGEF.",
         "Certificação do INCRA, planta e memorial descritivo.",
+        "Memoriais descritivos e cadastro territorial.",
         "Retificação de matrícula e orientação para averbação no cartório.",
         "ART do responsável técnico credenciado no INCRA."
       ],
@@ -201,8 +202,8 @@
       "icone": "folha",
       "titulo": "CAR – Cadastro Ambiental Rural (Goiás e Tocantins)",
       "titulo_curto": "CAR (GO e TO)",
-      "resumo": "Inscrição, retificação e análise do CAR em Goiás e no Tocantins — no Tocantins, direto com o Naturatins.",
-      "o_que_e": "O CAR é o registro eletrônico obrigatório de todos os imóveis rurais, com o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. Ele é declaratório: um CAR mal feito gera pendências na análise do órgão estadual, problemas no ITR e travas no crédito rural. Atendemos em Goiás, com a SEMAD, e no Tocantins, com protocolo e acompanhamento direto no Naturatins.",
+      "resumo": "Em todo Goiás e CAR completo no Tocantins (Naturatins): inscrição, retificação, análise e resposta a pendências.",
+      "o_que_e": "O CAR é o registro eletrônico obrigatório de todos os imóveis rurais, com o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. Ele é declaratório: um CAR mal feito gera pendências na análise do órgão estadual, problemas no ITR e travas no crédito rural. Atendemos todo o estado de Goiás, com a SEMAD, e fazemos o CAR completo no Tocantins — do levantamento à análise —, com protocolo e acompanhamento direto no Naturatins.",
       "quando_exigido": [
         "Obrigatório para todo imóvel rural (Lei 12.651/2012, art. 29).",
         "Condição para crédito agrícola (Lei 12.651/2012, art. 78-A).",
@@ -233,28 +234,31 @@
       "icone": "doc-folha",
       "titulo": "DAI – Declaração Ambiental do Imóvel",
       "titulo_curto": "DAI",
-      "resumo": "Declaração de passivos ambientais do imóvel em Goiás, com base técnica e imagens históricas.",
-      "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é o formulário eletrônico em que o interessado declara os passivos ambientais do imóvel — como atividade sem licença, conversão de uso do solo ou intervenção em área protegida. Ela pode resultar em Termo de Compromisso Ambiental (TCA) ou em Declaração de Inexistência de Passivos, e é usada na análise do licenciamento. Informação falsa ou omissa é infração, por isso a declaração precisa de base técnica.",
+      "resumo": "Declaração dos passivos ambientais do imóvel no Sistema Ipê (SEMAD-GO), com base técnica e imagens históricas — gera TCA ou Declaração de Inexistência de Passivos.",
+      "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é a declaração eletrônica que reúne as intervenções e os passivos ambientais do imóvel rural — atividade sem licença, conversão de uso do solo, supressão ou intervenção em área protegida. É feita no Portal Ambiental da SEMAD-GO (Sistema Ipê), a partir do imóvel já cadastrado, e resulta em Termo de Compromisso Ambiental (TCA), quando há passivo a regularizar, ou em Declaração de Inexistência de Passivos. Como informação falsa ou omissa é infração, a declaração precisa de base técnica: análise multitemporal de imagens de satélite e conferência de campo.",
       "quando_exigido": [
         "Regularização de passivos ambientais do imóvel em Goiás.",
-        "Avaliação de passivos dentro de processos de licenciamento.",
-        "Obtenção da Declaração de Inexistência de Passivos Ambientais.",
-        "[[CONFIRMAR regulamentação e plataforma vigentes da DAI na SEMAD]]"
+        "Licenciamento de atividades no imóvel, quando o órgão pede a situação de passivos.",
+        "Obtenção da Declaração de Inexistência de Passivos para crédito, venda ou compradores.",
+        "Compra e venda de imóvel rural com histórico de abertura de área."
       ],
       "entregaveis": [
-        "Análise multitemporal por imagens de satélite.",
-        "Levantamento e caracterização dos passivos.",
-        "Preenchimento técnico da DAI.",
-        "Acompanhamento do TCA, quando houver."
+        "Cadastro ou conferência do imóvel no Sistema Ipê (CAR, matrícula, escritura).",
+        "Análise multitemporal por imagens de satélite e vistoria quando necessária.",
+        "Levantamento e caracterização de cada passivo.",
+        "Preenchimento técnico e protocolo da DAI no Ipê.",
+        "Acompanhamento até o TCA ou a Declaração de Inexistência de Passivos."
       ],
       "documentos": [
-        "Matrícula e recibo do CAR.",
+        "Matrícula ou escritura e recibo do CAR.",
+        "Acesso do proprietário ao Sistema Ipê (o imóvel é cadastrado pelo proprietário).",
         "Licenças e autorizações já emitidas.",
-        "Limites do imóvel (SIGEF, KML ou planta)."
+        "Limites do imóvel (SIGEF, KML ou SHP)."
       ],
       "normas": [
         "Lei estadual (GO) 21.231/2022",
-        "Lei 12.651/2012 (Código Florestal)"
+        "Lei 12.651/2012 (Código Florestal)",
+        "Sistema Ipê – Portal Ambiental da SEMAD-GO"
       ]
     },
     {
@@ -378,6 +382,66 @@
         "Lei 9.433/1997 (Política Nacional de Recursos Hídricos)",
         "Lei estadual (GO) 13.123/1997",
         "Lei 12.334/2010 (Segurança de Barragens), quando aplicável"
+      ]
+    },
+    {
+      "slug": "pgrs-mtr-residuos",
+      "grupo": "ambiental",
+      "icone": "prancheta",
+      "titulo": "Resíduos sólidos: PGRS, MTR e DMR",
+      "titulo_curto": "PGRS e MTR",
+      "resumo": "Plano de Gerenciamento de Resíduos Sólidos, emissão de MTR e declarações no SINIR, com rotina simples para a sua equipe.",
+      "o_que_e": "Quem gera resíduos precisa saber o que gera, como armazena, quem transporta e para onde vai. Elaboramos o PGRS, organizamos o armazenamento e a destinação e cuidamos dos manifestos (MTR) e declarações (DMR) no sistema nacional, para a empresa ter a rastreabilidade que a fiscalização pede.",
+      "quando_exigido": [
+        "Indústrias, mineração, serviços de saúde, construção civil e geradores de resíduos perigosos (Lei 12.305/2010, art. 20).",
+        "Condicionante de licença ambiental.",
+        "Todo transporte de resíduos sujeito a MTR no sistema nacional."
+      ],
+      "entregaveis": [
+        "Diagnóstico e inventário dos resíduos.",
+        "PGRS com responsável técnico e ART.",
+        "Emissão e controle de MTR e DMR.",
+        "Treinamento rápido da equipe e checklist de armazenamento."
+      ],
+      "documentos": [
+        "Licença ambiental e condicionantes.",
+        "Lista de atividades e insumos.",
+        "Contratos com transportadores e destinadores, se houver."
+      ],
+      "normas": [
+        "Lei 12.305/2010 (Política Nacional de Resíduos Sólidos)",
+        "Decreto 10.936/2022",
+        "Portaria MMA 280/2020 (MTR e DMR no SINIR)",
+        "ABNT NBR 10004 (classificação de resíduos)"
+      ]
+    },
+    {
+      "slug": "ibama-ctf-rapp",
+      "grupo": "ambiental",
+      "icone": "escudo",
+      "titulo": "IBAMA: CTF/APP, RAPP e TCFA",
+      "titulo_curto": "IBAMA (CTF e RAPP)",
+      "resumo": "Inscrição e regularização no Cadastro Técnico Federal, relatório anual (RAPP) e orientação sobre a TCFA.",
+      "o_que_e": "Atividades potencialmente poluidoras precisam estar no Cadastro Técnico Federal do IBAMA e entregar o RAPP todo ano. Fazemos a inscrição no enquadramento certo, mantemos o cadastro em dia e preparamos o relatório — evitando multa e travas na emissão de certificados.",
+      "quando_exigido": [
+        "Atividades listadas no Anexo VIII da Lei 6.938/1981 (CTF/APP).",
+        "Entrega anual do RAPP, até 31 de março.",
+        "Pedido de certificado de regularidade para licitações, bancos e clientes."
+      ],
+      "entregaveis": [
+        "Inscrição ou correção do enquadramento no CTF/APP.",
+        "Preenchimento e entrega do RAPP.",
+        "Orientação sobre a TCFA e o certificado de regularidade.",
+        "Calendário de obrigações da empresa."
+      ],
+      "documentos": [
+        "CNPJ e licença ambiental.",
+        "Dados de produção, insumos e resíduos do ano.",
+        "Acesso ao CTF (ou procuração)."
+      ],
+      "normas": [
+        "Lei 6.938/1981, arts. 17 e 17-B a 17-C (CTF e TCFA)",
+        "Lei 10.165/2000"
       ]
     },
     {
@@ -563,37 +627,46 @@
         {
           "arquivo": "campo-biologa-960.jpg",
           "legenda": "Campanha de campo",
-          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado."
+          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado.",
+          "largura": 1080,
+          "pos": "50% 35%"
         },
         {
           "arquivo": "fauna-onca-parda-960.jpg",
           "legenda": "Onça-parda em armadilha fotográfica",
-          "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica."
+          "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica.",
+          "largura": 1600,
+          "pos": "30% 70%"
         },
         {
           "arquivo": "fauna-morcego-960.jpg",
           "legenda": "Quiropterofauna",
-          "alt": "Morcego capturado para identificação, apoiado na luva do pesquisador."
+          "alt": "Morcego capturado para identificação, apoiado na luva do pesquisador.",
+          "largura": 1600
         },
         {
           "arquivo": "fauna-roedor-biometria-960.jpg",
           "legenda": "Biometria de pequeno mamífero",
-          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva."
+          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva.",
+          "largura": 1600
         },
         {
           "arquivo": "fauna-ave-rede-neblina-960.jpg",
           "legenda": "Ave em rede de neblina",
-          "alt": "Ave de bico vermelho e peito pintado, segura na mão após captura em rede de neblina."
+          "alt": "Ave de bico vermelho e peito pintado, segura na mão após captura em rede de neblina.",
+          "largura": 960
         },
         {
           "arquivo": "fauna-serpente-960.jpg",
           "legenda": "Herpetofauna – busca ativa",
-          "alt": "Serpente com padrão em manchas sobre o solo, à noite."
+          "alt": "Serpente com padrão em manchas sobre o solo, à noite.",
+          "largura": 902
         },
         {
           "arquivo": "fauna-tucano-960.jpg",
           "legenda": "Avifauna",
-          "alt": "Tucano-toco pousado em galho contra o céu."
+          "alt": "Tucano-toco pousado em galho contra o céu.",
+          "largura": 1600
         }
       ],
       "normas": [

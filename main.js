@@ -67,7 +67,7 @@
     burger.addEventListener('click', () => alternar(burger.getAttribute('aria-expanded') !== 'true'));
     menu.addEventListener('click', e => { if (e.target.closest('a')) alternar(false); });
     addEventListener('keydown', e => { if (e.key === 'Escape' && burger.getAttribute('aria-expanded') === 'true') { alternar(false); burger.focus(); } });
-    matchMedia('(min-width:1024px)').addEventListener('change', e => e.matches && alternar(false));
+    matchMedia('(min-width:1200px)').addEventListener('change', e => e.matches && alternar(false));
   }
 
   /* WhatsApp flutuante só aparece depois que os botões do topo saem da tela */
@@ -150,8 +150,9 @@
   function fotos(lista = []) {
     const img = f => {
       const a = BASE + esc(f.arquivo), m = /-960\.jpg$/.test(f.arquivo);
-      const tag = `<img src="${a}" alt="${esc(f.alt || f.legenda)}" loading="lazy" decoding="async">`;
-      return m ? `<picture><source type="image/webp" srcset="${a.replace(/-960\.jpg$/, '-480.webp')} 480w, ${a.replace(/\.jpg$/, '.webp')} 960w" sizes="(min-width:1024px) 300px, 46vw">${tag}</picture>` : tag;
+      const tag = `<img src="${a}" alt="${esc(f.alt || f.legenda)}" loading="lazy" decoding="async"${f.pos ? ` style="object-position:${esc(f.pos)}"` : ''}>`;
+      const larg = f.largura || 960, s16 = larg >= 1600 ? `, ${a.replace(/-960\.jpg$/, '-1600.webp')} 1600w` : '';
+      return m ? `<picture><source type="image/webp" srcset="${a.replace(/-960\.jpg$/, '-480.webp')} 480w, ${a.replace(/\.jpg$/, '.webp')} 960w${s16}" sizes="(min-width:1024px) 640px, 100vw">${tag}</picture>` : tag;
     };
     return lista.map(f => `<figure>${f.arquivo
       ? `${img(f)}${f.legenda ? `<figcaption>${esc(f.legenda)}</figcaption>` : ''}`
@@ -163,13 +164,14 @@
   async function projetos() {
     const grade = $('#grade-proj'), filtros = $('#filtros');
     const d = await json('projetos');
-    PROJETOS = d.projetos || []; CREDITO = d.credito_satelite || '';
+    PROJETOS = d.projetos || [];
+    const VISIVEIS = PROJETOS.filter(p => !p.oculto); CREDITO = d.credito_satelite || '';
     if (!grade || !filtros) return;
-    const cont = c => PROJETOS.filter(p => !c || p.categoria === c).length;
+    const cont = c => VISIVEIS.filter(p => !c || p.categoria === c).length;
     const cats = ['', ...d.categorias];
     filtros.innerHTML = cats.map(c => `<button type="button" class="filtro" data-cat="${esc(c)}" aria-pressed="${!c}">${c ? esc(c) : 'Todos'}${cont(c) ? ` <small>${cont(c)}</small>` : ''}</button>`).join('');
     const render = cat => {
-      const lista = PROJETOS.filter(p => !cat || p.categoria === cat);
+      const lista = VISIVEIS.filter(p => !cat || p.categoria === cat);
       grade.classList.toggle('unico', lista.length === 1);
       grade.innerHTML = lista.length ? lista.map(p => {
         const capa = p.imagens[0];
@@ -183,6 +185,10 @@
         </article></li>`;
       }).join('') : `<li class="vazio">Novos projetos desta categoria serão publicados em breve.</li>`;
     };
+    document.addEventListener('click', e => {
+      const l = e.target.closest('[data-filtro]'); if (!l) return;
+      const b = $$('.filtro', filtros).find(x => x.dataset.cat === l.dataset.filtro); if (b) b.click();
+    });
     filtros.addEventListener('click', e => {
       const b = e.target.closest('.filtro'); if (!b) return;
       $$('.filtro', filtros).forEach(x => x.setAttribute('aria-pressed', x === b));
@@ -258,11 +264,10 @@
     e.preventDefault(); lbAbrir(b.dataset.lbProj, b.dataset.lbIdx, b);
   });
 
-  /* ---------- Antes e depois ---------- */
-  const comp = $('#comparador');
-  if (comp) {
+  /* ---------- Antes e depois (vários comparadores na página) ---------- */
+  $$('.comparador').forEach(comp => {
     const rng = $('input[type=range]', comp);
-    const pos = v => { v = Math.max(0, Math.min(100, v)); comp.style.setProperty('--pos', v + '%'); rng.value = Math.round(v); rng.setAttribute('aria-valuetext', `${Math.round(v)}% do ano anterior visível`); };
+    const pos = v => { v = Math.max(0, Math.min(100, v)); comp.style.setProperty('--pos', v + '%'); rng.value = Math.round(v); rng.setAttribute('aria-valuetext', `${Math.round(v)}% da imagem anterior visível`); };
     const deX = x => { const r = comp.getBoundingClientRect(); pos((x - r.left) / r.width * 100); };
     let arrastando = false, ini = null;
     comp.addEventListener('pointerdown', e => {
@@ -283,17 +288,19 @@
     comp.addEventListener('pointerup', parar); comp.addEventListener('pointercancel', parar);
     rng.addEventListener('input', () => pos(+rng.value));
     pos(50);
-    // troca do ano anterior
-    $$('.anos button').forEach(b => b.addEventListener('click', () => {
-      const ano = b.dataset.ano, arq = `serie_historica_${ano}`;
-      $$('.anos button').forEach(x => x.setAttribute('aria-pressed', x === b));
-      $('#src-antes').srcset = `${IMG}${arq}-480.webp 480w, ${IMG}${arq}-960.webp 960w`;
-      const im = $('#img-antes');
+    // troca do ano anterior (quando o painel tiver botões de ano)
+    const painel = comp.closest('.painel'), prefixo = comp.dataset.prefixo;
+    if (!painel || !prefixo) return;
+    $$('.anos button', painel).forEach(b => b.addEventListener('click', () => {
+      const ano = b.dataset.ano, arq = `${prefixo}${ano}`;
+      $$('.anos button', painel).forEach(x => x.setAttribute('aria-pressed', x === b));
+      $('source.src-antes', comp).srcset = `${IMG}${arq}-480.webp 480w, ${IMG}${arq}-960.webp 960w`;
+      const im = $('img.antes', comp);
       im.srcset = `${IMG}${arq}-480.jpg 480w, ${IMG}${arq}-960.jpg 960w`; im.src = `${IMG}${arq}-960.jpg`;
       im.alt = `O mesmo imóvel em ${ano}, para comparação.`;
-      $('#rot-antes').textContent = ano; $('#ano-antes').textContent = ano;
+      $('.rot.esq', comp).textContent = ano; const t = $('.ano-antes', painel); if (t) t.textContent = ano;
     }));
-  }
+  });
 
   /* ---------- Equipe ---------- */
   async function equipe() {
@@ -328,6 +335,9 @@
   const MSGS = {
     orcamento: c => c.mensagem_padrao,
     itr: () => 'Olá, Breno! Recebi um Termo de Intimação do ITR e preciso de um laudo técnico. Podemos conversar?',
+    agrimensura: () => 'Olá, Breno! Preciso de um serviço de agrimensura / georreferenciamento. Podemos conversar?',
+    car_to: () => 'Olá, Breno! Preciso de CAR no Tocantins. Podemos conversar?',
+    dai: () => 'Olá, Breno! Preciso de ajuda com a DAI no Sistema Ipê. Podemos conversar?',
     parceria: () => 'Olá, Breno! Sou profissional da área e tenho interesse em parceria técnica com a GeoDetec.',
     servico: (c, el) => `Olá, Breno! Vim pelo site da GeoDetec e gostaria de um orçamento de: ${el.dataset.servico}.`
   };
@@ -353,6 +363,9 @@
       if (k === 'email') { el.textContent = v; if (!vazio(v)) el.href = `mailto:${v}`; else el.removeAttribute('href'); }
       else if (k === 'instagram') { const u = String(v).replace(/^@/, ''); el.textContent = vazio(v) ? v : '@' + u; if (!vazio(v)) el.href = `https://www.instagram.com/${u}/`; else el.removeAttribute('href'); }
       else el.textContent = v;
+    });
+    $$('[data-ct="instagram-link"]').forEach(el => {
+      if (!vazio(CT.instagram)) { el.href = `https://www.instagram.com/${String(CT.instagram).replace(/^@/, '')}/`; el.target = '_blank'; el.rel = 'noopener'; }
     });
     const btnV = $('#salvar-contato');
     if (btnV) btnV.addEventListener('click', () => {
