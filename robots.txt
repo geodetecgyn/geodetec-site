@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /tools/
-Disallow: /servicos/_template.html
+Disallow: /_template.html
 
 Sitemap: https://[[DOMINIO]]/sitemap.xml

@@ -27,7 +27,7 @@
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:calc(var(--header) + 12px)}
 body{margin:0;font-family:var(--f-texto);font-size:1rem;line-height:1.6;color:var(--txt);background:var(--bg-1);overflow-x:hidden;font-optical-sizing:auto;-webkit-font-smoothing:antialiased}
 body::before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(120% 80% at 80% 0%,var(--bg-2) 0%,var(--bg-1) 45%,var(--bg-0) 100%)}
-body::after{content:"";position:fixed;inset:0;z-index:-1;background:url("../img/curvas-de-nivel.svg") center/cover no-repeat;opacity:.045;pointer-events:none}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background:url("curvas-de-nivel.svg") center/cover no-repeat;opacity:.045;pointer-events:none}
 img,svg,picture,video{display:block;max-width:100%}
 img{height:auto}
 a{color:var(--verde-claro);text-underline-offset:3px}

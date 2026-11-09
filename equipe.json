@@ -1,0 +1,10 @@
+{
+  "areas": [
+    { "nome": "Engenharia Ambiental", "conselho": "CREA", "icone": "folha", "descricao": "Licenciamento, diagnósticos, planos de controle e conformidade legal." },
+    { "nome": "Engenharia Agronômica", "conselho": "CREA", "icone": "broto", "descricao": "Uso do solo, avaliação de imóveis rurais e laudos de VTN." },
+    { "nome": "Engenharia Agrícola", "conselho": "CREA", "icone": "drone", "descricao": "Topografia, georreferenciamento, drone e recursos hídricos." },
+    { "nome": "Engenharia Florestal", "conselho": "CREA", "icone": "arvore", "descricao": "Inventário florestal, vegetação nativa e laudos de flora." },
+    { "nome": "Biologia", "conselho": "CRBio", "icone": "pegada", "descricao": "Equipe de biólogos para levantamento, resgate e monitoramento de fauna." }
+  ],
+  "pessoas": []
+}

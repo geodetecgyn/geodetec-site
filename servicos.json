@@ -1,0 +1,793 @@
+{
+  "grupos": [
+    {
+      "id": "fundiario",
+      "titulo": "Regularização fundiária e campo",
+      "curto": "Fundiário e campo",
+      "resumo": "Da base cartográfica à materialização das áreas no campo."
+    },
+    {
+      "id": "ambiental",
+      "titulo": "Licenciamento e regularização ambiental",
+      "curto": "Licenciamento",
+      "resumo": "Cadastros, licenças e projetos com base na legislação de Goiás."
+    },
+    {
+      "id": "passivos",
+      "titulo": "Passivos, áreas contaminadas e água subterrânea",
+      "curto": "Passivos e GAC",
+      "resumo": "Do diagnóstico do passivo à investigação, monitoramento e remediação."
+    },
+    {
+      "id": "biota",
+      "titulo": "Fauna e flora",
+      "curto": "Fauna e flora",
+      "resumo": "Equipe de biólogos e engenheiros em campo."
+    },
+    {
+      "id": "geo",
+      "titulo": "Geotecnologia e laudos",
+      "curto": "Geo e laudos",
+      "resumo": "Drone, GNSS, satélite e laudos com ART."
+    }
+  ],
+  "servicos": [
+    {
+      "slug": "georreferenciamento-sigef",
+      "grupo": "fundiario",
+      "icone": "pin-mapa",
+      "titulo": "Georreferenciamento INCRA/SIGEF",
+      "titulo_curto": "Georreferenciamento SIGEF",
+      "resumo": "Levantamento com GNSS RTK, certificação no SIGEF e retificação de matrícula.",
+      "o_que_e": "É a medição dos vértices que definem o perímetro do imóvel rural, com coordenadas no sistema SIRGAS 2000 e precisão exigida pela Norma Técnica para Georreferenciamento de Imóveis Rurais do INCRA. Os dados são enviados ao SIGEF, que verifica sobreposições com imóveis vizinhos já certificados e emite a certificação, usada depois no registro da matrícula.",
+      "quando_exigido": [
+        "Desmembramento, parcelamento ou remembramento do imóvel rural.",
+        "Transferência do imóvel (venda, doação, partilha), conforme os prazos do Decreto 4.449/2002, alterados pelo Decreto 12.689/2025. [[CONFIRMAR prazo vigente — há projeto de lei para estender]]",
+        "Ações judiciais que envolvam imóvel rural (Lei 6.015/1973, art. 225, § 3º).",
+        "Retificação de área ou divergência entre a matrícula e a realidade de campo.",
+        "Cercas, obras ou divergência de divisa com confrontante."
+      ],
+      "entregaveis": [
+        "Levantamento de campo com receptores GNSS RTK.",
+        "Processamento, planilha de dados e submissão ao SIGEF.",
+        "Certificação do INCRA, planta e memorial descritivo.",
+        "Retificação de matrícula e orientação para averbação no cartório.",
+        "ART do responsável técnico credenciado no INCRA."
+      ],
+      "documentos": [
+        "Matrícula atualizada do imóvel (certidão de inteiro teor).",
+        "CCIR e número do imóvel na Receita (NIRF/CIB).",
+        "Recibo do CAR, se houver.",
+        "Documentos pessoais dos proprietários.",
+        "Nome e contato dos confrontantes."
+      ],
+      "normas": [
+        "Lei 6.015/1973, art. 176, §§ 3º a 5º (incluídos pela Lei 10.267/2001)",
+        "Decreto 4.449/2002 e Decreto 12.689/2025",
+        "Norma Técnica para Georreferenciamento de Imóveis Rurais – INCRA (3ª ed.)",
+        "ABNT NBR 13133 – Execução de levantamento topográfico"
+      ]
+    },
+    {
+      "slug": "reserva-legal-app",
+      "grupo": "fundiario",
+      "icone": "folha",
+      "titulo": "Reserva Legal e APP: mapeamento, demarcação e averbação",
+      "titulo_curto": "Reserva Legal e APP",
+      "resumo": "Nascentes, cursos d'água e topos de morro mapeados; APP determinada e locada; Reserva Legal demarcada no campo e averbada.",
+      "o_que_e": "Levamos o Código Florestal para o terreno. Mapeamos nascentes, cursos d'água e topos de morro, determinamos as faixas de APP e as locamos em campo. Na Reserva Legal, fazemos a demarcação física (marcos, cercas) e a parte jurídica: planta, memorial e averbação na matrícula, quando exigida ou desejada.",
+      "quando_exigido": [
+        "Inscrição ou retificação do CAR e adesão ao PRA.",
+        "Cercamento e isolamento de nascentes e APP.",
+        "Compensação ou relocação de Reserva Legal.",
+        "Exigência de licença, banco ou comprador."
+      ],
+      "entregaveis": [
+        "Mapa de nascentes, hidrografia, topos de morro e APP.",
+        "Locação das APP e da Reserva Legal em campo.",
+        "Planta e memorial descritivo da Reserva Legal.",
+        "Averbação no cartório de registro de imóveis, quando aplicável.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Matrícula atualizada e recibo do CAR.",
+        "Limites do imóvel (SIGEF, KML ou SHP).",
+        "Termo de compromisso ou exigência do órgão, se houver."
+      ],
+      "normas": [
+        "Lei 12.651/2012, arts. 4º (APP), 12 a 18 (Reserva Legal)",
+        "O registro no CAR desobriga a averbação da RL (Lei 12.651/2012, art. 18, § 4º)",
+        "Lei 6.015/1973 (Registros Públicos)"
+      ]
+    },
+    {
+      "slug": "locacao-supressao-aceiros-cercas",
+      "grupo": "fundiario",
+      "icone": "divisas",
+      "titulo": "Locação em campo: áreas de supressão, aceiros e cercas",
+      "titulo_curto": "Locação em campo",
+      "resumo": "Limites da área com supressão autorizada materializados no campo, croqui para fiscalização, aceiros, cercas e isolamento de nascentes.",
+      "o_que_e": "Uma autorização de supressão só protege quem desmata dentro do polígono autorizado. Levantamos e locamos os limites da área licenciada e materializamos no campo com estacas, marcos e fitas, para a equipe da máquina não passar do limite. Entregamos o croqui para a fiscalização. Também locamos aceiros, cercas e isolamento de nascentes.",
+      "quando_exigido": [
+        "Antes de iniciar supressão de vegetação autorizada (ASV).",
+        "Abertura de aceiros e construção de cercas.",
+        "Isolamento de nascentes e APP exigido em licença ou PRA."
+      ],
+      "entregaveis": [
+        "Levantamento e locação dos limites da área autorizada.",
+        "Materialização em campo com estacas, marcos e fitas.",
+        "Croqui georreferenciado para fiscalização.",
+        "Locação de aceiros, cercas e isolamento de nascentes."
+      ],
+      "documentos": [
+        "Autorização de supressão e polígono aprovado (KML/SHP).",
+        "Matrícula e recibo do CAR."
+      ],
+      "normas": [
+        "Lei 12.651/2012, art. 26 (supressão de vegetação nativa)",
+        "Condicionantes da autorização de supressão",
+        "ABNT NBR 13133 (levantamento topográfico)"
+      ]
+    },
+    {
+      "slug": "ccir-itr-regularizacao-fundiaria",
+      "grupo": "fundiario",
+      "icone": "dividir",
+      "titulo": "Regularização fundiária: CCIR, ITR, REURB, retificação e desmembramento",
+      "titulo_curto": "Regularização fundiária",
+      "resumo": "CCIR e ITR em dia, REURB, retificação de área, desmembramento, remembramento e peças para usucapião.",
+      "o_que_e": "Matrícula, CCIR, ITR e CAR precisam contar a mesma história. Corrigimos áreas e confrontações, dividimos ou unimos imóveis e preparamos plantas e memoriais para cartório, INCRA e Receita — junto com o advogado ou a imobiliária do cliente.",
+      "quando_exigido": [
+        "Área ou confrontações da matrícula diferentes do campo (Lei 6.015/1973, arts. 212 e 213).",
+        "Venda de parte, partilha, doação ou unificação de matrículas, respeitando a fração mínima de parcelamento.",
+        "CCIR exigido para vender, desmembrar, arrendar, hipotecar e homologar partilha (Lei 5.868/1972, art. 22).",
+        "Usucapião, titulação ou regularização de posse.",
+        "REURB de núcleos informais, inclusive em zona rural (Lei 13.465/2017)."
+      ],
+      "entregaveis": [
+        "Levantamento georreferenciado e certificação SIGEF de cada parte.",
+        "Plantas e memoriais descritivos para o cartório.",
+        "Levantamentos, plantas e memoriais para REURB.",
+        "Atualização no SNCR, emissão do CCIR e conferência com a DITR.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Matrícula ou documento de posse.",
+        "CCIR e recibos do ITR anteriores.",
+        "Recibo do CAR.",
+        "Documentos pessoais dos titulares."
+      ],
+      "normas": [
+        "Lei 6.015/1973 (Registros Públicos), arts. 176, 212 e 213",
+        "Lei 5.868/1972 (SNCR e fração mínima de parcelamento)",
+        "Lei 9.393/1996 (ITR)",
+        "Lei 13.465/2017 (REURB)"
+      ]
+    },
+    {
+      "slug": "due-diligence-certidoes",
+      "grupo": "fundiario",
+      "icone": "lupa",
+      "titulo": "Due diligence ambiental e certidões",
+      "titulo_curto": "Due diligence e certidões",
+      "resumo": "Antes de comprar, vender, arrendar ou financiar: embargos, certidões, PRODES, CAR e passivos do imóvel.",
+      "o_que_e": "Um diagnóstico rápido do imóvel rural antes de fechar negócio. Cruzamos o perímetro com as bases públicas de embargos, desmatamento (PRODES), CAR e áreas protegidas, emitimos as certidões e apontamos os riscos e o caminho para resolvê-los.",
+      "quando_exigido": [
+        "Compra e venda, arrendamento ou parceria rural.",
+        "Crédito rural e exigências de bancos.",
+        "Venda para compradores com protocolo socioambiental (frigoríficos, tradings).",
+        "Programas e editais que pedem certidões negativas."
+      ],
+      "entregaveis": [
+        "Certidões de embargos e débitos (IBAMA e SEMAD-GO) dos titulares.",
+        "Cruzamento do perímetro com embargos, PRODES e áreas protegidas.",
+        "Conferência do CAR com as imagens de satélite.",
+        "Relatório de riscos com recomendações."
+      ],
+      "documentos": [
+        "Matrícula e recibo do CAR.",
+        "CPF/CNPJ de todos os titulares (e do vendedor, se for compra).",
+        "Limites do imóvel (SIGEF, KML ou SHP)."
+      ],
+      "normas": [
+        "Lei 12.651/2012 (Código Florestal)",
+        "Lei 9.605/1998 e Decreto 6.514/2008 (embargos)",
+        "Bases oficiais: IBAMA, SEMAD-GO, INPE/PRODES, SICAR"
+      ]
+    },
+    {
+      "slug": "car-cadastro-ambiental-rural",
+      "grupo": "ambiental",
+      "icone": "folha",
+      "titulo": "CAR – Cadastro Ambiental Rural (Goiás e Tocantins)",
+      "titulo_curto": "CAR (GO e TO)",
+      "resumo": "Inscrição, retificação e análise do CAR em Goiás e no Tocantins — no Tocantins, direto com o Naturatins.",
+      "o_que_e": "O CAR é o registro eletrônico obrigatório de todos os imóveis rurais, com o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. Ele é declaratório: um CAR mal feito gera pendências na análise do órgão estadual, problemas no ITR e travas no crédito rural. Atendemos em Goiás, com a SEMAD, e no Tocantins, com protocolo e acompanhamento direto no Naturatins.",
+      "quando_exigido": [
+        "Obrigatório para todo imóvel rural (Lei 12.651/2012, art. 29).",
+        "Condição para crédito agrícola (Lei 12.651/2012, art. 78-A).",
+        "Retificação quando houver mudança de área, divergência ou notificação na análise.",
+        "Base para o Programa de Regularização Ambiental (PRA)."
+      ],
+      "entregaveis": [
+        "Mapeamento de APP, Reserva Legal, remanescentes e uso do solo.",
+        "Inscrição ou retificação no sistema do CAR.",
+        "Resposta a notificações da análise do órgão ambiental.",
+        "Relatório com mapas e quadro de áreas."
+      ],
+      "documentos": [
+        "Matrícula ou documento de posse.",
+        "Limites do imóvel (SIGEF, KML ou planta).",
+        "Recibo do CAR anterior, se houver.",
+        "CPF/CNPJ dos proprietários."
+      ],
+      "normas": [
+        "Lei 12.651/2012 (Código Florestal)",
+        "Decreto 7.830/2012",
+        "Órgãos estaduais: SEMAD (GO) e Naturatins (TO)"
+      ]
+    },
+    {
+      "slug": "dai-declaracao-ambiental-do-imovel",
+      "grupo": "ambiental",
+      "icone": "doc-folha",
+      "titulo": "DAI – Declaração Ambiental do Imóvel",
+      "titulo_curto": "DAI",
+      "resumo": "Declaração de passivos ambientais do imóvel em Goiás, com base técnica e imagens históricas.",
+      "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é o formulário eletrônico em que o interessado declara os passivos ambientais do imóvel — como atividade sem licença, conversão de uso do solo ou intervenção em área protegida. Ela pode resultar em Termo de Compromisso Ambiental (TCA) ou em Declaração de Inexistência de Passivos, e é usada na análise do licenciamento. Informação falsa ou omissa é infração, por isso a declaração precisa de base técnica.",
+      "quando_exigido": [
+        "Regularização de passivos ambientais do imóvel em Goiás.",
+        "Avaliação de passivos dentro de processos de licenciamento.",
+        "Obtenção da Declaração de Inexistência de Passivos Ambientais.",
+        "[[CONFIRMAR regulamentação e plataforma vigentes da DAI na SEMAD]]"
+      ],
+      "entregaveis": [
+        "Análise multitemporal por imagens de satélite.",
+        "Levantamento e caracterização dos passivos.",
+        "Preenchimento técnico da DAI.",
+        "Acompanhamento do TCA, quando houver."
+      ],
+      "documentos": [
+        "Matrícula e recibo do CAR.",
+        "Licenças e autorizações já emitidas.",
+        "Limites do imóvel (SIGEF, KML ou planta)."
+      ],
+      "normas": [
+        "Lei estadual (GO) 21.231/2022",
+        "Lei 12.651/2012 (Código Florestal)"
+      ]
+    },
+    {
+      "slug": "licenciamento-ambiental-empreendimentos",
+      "grupo": "ambiental",
+      "icone": "industria",
+      "titulo": "Licenciamento ambiental de empreendimentos",
+      "titulo_curto": "Licenciamento de empreendimentos",
+      "resumo": "Enquadramento, estudos e acompanhamento do processo no Sistema Ipê (SEMAD-GO) e nos municípios.",
+      "o_que_e": "Atividades potencialmente poluidoras ou que usam recursos naturais precisam de licença ambiental. Fazemos o enquadramento da atividade, os estudos exigidos pelo Termo de Referência, o protocolo e o acompanhamento até a emissão da licença e o atendimento das condicionantes.",
+      "quando_exigido": [
+        "Instalação, ampliação ou operação de atividade listada como licenciável.",
+        "Renovação de licença ou mudança de modalidade.",
+        "Atendimento de notificação ou de condicionantes."
+      ],
+      "entregaveis": [
+        "Enquadramento da atividade e definição da modalidade.",
+        "Estudos e relatórios conforme o Termo de Referência.",
+        "Protocolo e acompanhamento no Sistema Ipê.",
+        "Relatórios de cumprimento de condicionantes."
+      ],
+      "documentos": [
+        "Documentos da empresa e do imóvel (matrícula, CAR).",
+        "Descrição da atividade, porte e projeto.",
+        "Licenças anteriores, se houver.",
+        "Outorga ou dispensa de uso de água, quando aplicável."
+      ],
+      "normas": [
+        "Lei Complementar 140/2011",
+        "Resolução CONAMA 237/1997",
+        "Lei estadual (GO) 20.694/2019",
+        "Lei 15.190/2025 – Lei Geral do Licenciamento [[CONFIRMAR vigência e vetos]]"
+      ]
+    },
+    {
+      "slug": "licenciamento-ambiental-loteamentos",
+      "grupo": "ambiental",
+      "icone": "loteamento",
+      "titulo": "Licenciamento ambiental de loteamentos",
+      "titulo_curto": "Licenciamento de loteamentos",
+      "resumo": "Estudos ambientais, levantamento planialtimétrico e licenças para parcelamento do solo.",
+      "o_que_e": "Loteamentos exigem compatibilizar o projeto urbanístico com APP, drenagem, vegetação e a legislação municipal. Reunimos levantamento topográfico, estudos de flora e fauna e o processo de licenciamento no órgão competente.",
+      "quando_exigido": [
+        "Parcelamento do solo para fins urbanos (Lei 6.766/1979).",
+        "Condomínios e chacreamentos, conforme a legislação municipal.",
+        "Supressão de vegetação ou intervenção em APP no projeto."
+      ],
+      "entregaveis": [
+        "Levantamento planialtimétrico e mapas de restrição ambiental.",
+        "Estudos de flora e fauna, quando exigidos.",
+        "Estudo ambiental e processo de licenciamento.",
+        "ART dos responsáveis técnicos."
+      ],
+      "documentos": [
+        "Matrícula da gleba.",
+        "Diretrizes urbanísticas do município.",
+        "Projeto urbanístico preliminar, se houver."
+      ],
+      "normas": [
+        "Lei 6.766/1979 (Parcelamento do Solo Urbano)",
+        "Lei 12.651/2012 (Código Florestal)",
+        "Lei Complementar 140/2011"
+      ]
+    },
+    {
+      "slug": "saneamento-hidrossanitario-percolacao",
+      "grupo": "ambiental",
+      "icone": "casa",
+      "titulo": "Projeto hidrossanitário e teste de percolação",
+      "titulo_curto": "Hidrossanitário e percolação",
+      "resumo": "Fossa, filtro e sumidouro dimensionados por teste de percolação, para loteamentos, chácaras e empreendimentos.",
+      "o_que_e": "Onde não há rede de esgoto, o tratamento é individual. Fazemos o teste de percolação do solo, dimensionamos o sistema (tanque séptico, filtro, sumidouro ou vala) e definimos em planta a distância segura entre fossa e poço em cada lote.",
+      "quando_exigido": [
+        "Licenciamento ou registro de loteamentos e condomínios sem rede de esgoto.",
+        "Empreendimentos rurais e industriais com esgoto sanitário.",
+        "Exigência da prefeitura ou do órgão ambiental."
+      ],
+      "entregaveis": [
+        "Teste de percolação em campo.",
+        "Projeto-tipo do sistema e memorial de cálculo.",
+        "Planta com locação de fossa e poço por lote.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Planta do loteamento ou do empreendimento.",
+        "Número de unidades e de usuários.",
+        "Origem da água (rede, poço ou cisterna)."
+      ],
+      "normas": [
+        "ABNT NBR 17076:2024 – Sistemas de tratamento de esgoto de menor porte [[CONFIRMAR]]",
+        "Lei 6.766/1979, quando for loteamento",
+        "Exigências do órgão licenciador e do município"
+      ]
+    },
+    {
+      "slug": "outorgas-recursos-hidricos",
+      "grupo": "ambiental",
+      "icone": "gota",
+      "titulo": "Outorgas e recursos hídricos",
+      "titulo_curto": "Outorgas",
+      "resumo": "Pedidos de outorga e dispensa para poços, captações superficiais, barramentos e lançamentos.",
+      "o_que_e": "Quem capta água, perfura poço, constrói barramento ou lança efluente em corpo hídrico precisa de outorga (ou de dispensa, nos usos insignificantes). Preparamos os estudos hidrológicos e o pedido no órgão estadual ou na ANA, conforme o domínio do curso d'água.",
+      "quando_exigido": [
+        "Captação superficial ou subterrânea (poço).",
+        "Barramentos e reservatórios.",
+        "Lançamento de efluentes.",
+        "Exigência no licenciamento da atividade."
+      ],
+      "entregaveis": [
+        "Estudo de disponibilidade hídrica e demanda.",
+        "Pedido de outorga ou de dispensa.",
+        "Mapas de localização das interferências.",
+        "Acompanhamento até a decisão."
+      ],
+      "documentos": [
+        "Matrícula e recibo do CAR.",
+        "Localização dos pontos de uso.",
+        "Dados do poço ou da bomba, se já existirem."
+      ],
+      "normas": [
+        "Lei 9.433/1997 (Política Nacional de Recursos Hídricos)",
+        "Lei estadual (GO) 13.123/1997",
+        "Lei 12.334/2010 (Segurança de Barragens), quando aplicável"
+      ]
+    },
+    {
+      "slug": "analise-passivos-ambientais",
+      "grupo": "passivos",
+      "icone": "lupa",
+      "titulo": "Análise de passivos ambientais",
+      "titulo_curto": "Passivos ambientais",
+      "resumo": "Avaliação de passivo para compra, venda, encerramento ou financiamento de áreas industriais, postos, mineração e imóveis rurais.",
+      "o_que_e": "Levantamos o histórico de uso da área, as atividades potencialmente poluidoras, as licenças e as evidências de campo para dizer, com base técnica, se existe passivo ambiental, onde ele está e quanto pesa no negócio. Se houver suspeita de contaminação, indicamos a investigação necessária.",
+      "quando_exigido": [
+        "Compra, venda, fusão ou arrendamento de áreas e empresas.",
+        "Desativação ou mudança de uso de áreas industriais e postos.",
+        "Exigência de banco, investidor ou órgão ambiental.",
+        "Regularização de passivos (inclusive via DAI em Goiás)."
+      ],
+      "entregaveis": [
+        "Levantamento histórico (imagens, licenças, entrevistas).",
+        "Vistoria de campo com registro fotográfico.",
+        "Identificação de áreas com potencial de contaminação.",
+        "Relatório de passivos com recomendações e custos de referência.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Matrícula e plantas da área.",
+        "Licenças, autos e processos ambientais.",
+        "Histórico de atividades e de estruturas desativadas."
+      ],
+      "normas": [
+        "ABNT NBR 15515-1 (avaliação preliminar de passivo ambiental)",
+        "Resolução CONAMA 420/2009",
+        "Lei estadual (GO) 21.231/2022 (DAI), quando aplicável"
+      ]
+    },
+    {
+      "slug": "gerenciamento-areas-contaminadas",
+      "grupo": "passivos",
+      "icone": "alerta",
+      "titulo": "Gerenciamento de áreas contaminadas",
+      "titulo_curto": "Áreas contaminadas (GAC)",
+      "resumo": "Avaliação preliminar, investigação confirmatória e detalhada, avaliação de risco, monitoramento e acompanhamento da remediação.",
+      "o_que_e": "O gerenciamento de áreas contaminadas segue etapas: identificar a suspeita, confirmar se há contaminação, delimitar a pluma, avaliar o risco à saúde e ao ambiente e definir a intervenção. Conduzimos cada etapa com sondagens, poços de monitoramento e laboratório acreditado, e acompanhamos o processo no órgão ambiental.",
+      "quando_exigido": [
+        "Postos de combustível, oficinas, indústrias e áreas de mineração com suspeita de vazamento.",
+        "Exigência do órgão ambiental ou condicionante de licença.",
+        "Desativação, venda ou mudança de uso da área.",
+        "Resultado de análise de passivo que indicou suspeita."
+      ],
+      "entregaveis": [
+        "Avaliação preliminar e plano de investigação.",
+        "Sondagens, instalação de poços e amostragem de solo e água subterrânea.",
+        "Investigação confirmatória e detalhada, com mapas de pluma.",
+        "Avaliação de risco e plano de intervenção.",
+        "Monitoramento e relatórios ao órgão ambiental, com ART."
+      ],
+      "documentos": [
+        "Planta da área com tanques, linhas e estruturas.",
+        "Histórico de vazamentos, reformas e testes de estanqueidade.",
+        "Licenças e notificações do órgão ambiental."
+      ],
+      "normas": [
+        "Resolução CONAMA 420/2009",
+        "ABNT NBR 15515-1, -2 e -3 (passivo ambiental, investigação confirmatória e detalhada)",
+        "ABNT NBR 15495-1 (poços de monitoramento)",
+        "ABNT NBR 15847 (amostragem de água subterrânea)"
+      ]
+    },
+    {
+      "slug": "estudos-hidrogeologicos",
+      "grupo": "passivos",
+      "icone": "gota",
+      "titulo": "Estudos hidrogeológicos",
+      "titulo_curto": "Estudos hidrogeológicos",
+      "resumo": "Fluxo da água subterrânea, poços de monitoramento, ensaios e mapas potenciométricos para GAC, outorga e licenciamento.",
+      "o_que_e": "Entender para onde a água subterrânea corre é o que define onde investigar, onde monitorar e quanto se pode captar. Fazemos o levantamento de poços e nascentes, o nivelamento, os ensaios e os mapas potenciométricos. Quando o escopo exige atribuição de geologia, o estudo é feito com geólogo parceiro, sob a mesma coordenação técnica.",
+      "quando_exigido": [
+        "Gerenciamento de áreas contaminadas (direção da pluma).",
+        "Outorga de poço tubular e estudos de disponibilidade.",
+        "Licenciamento de mineração, aterros, barragens e indústrias.",
+        "Rede de monitoramento de água subterrânea."
+      ],
+      "entregaveis": [
+        "Cadastro de poços, nascentes e pontos de água.",
+        "Medição de nível e mapa potenciométrico com direção de fluxo.",
+        "Ensaios de permeabilidade e de bombeamento, quando necessários.",
+        "Projeto e locação de poços de monitoramento.",
+        "Relatório técnico com ART."
+      ],
+      "documentos": [
+        "Localização da área e das estruturas.",
+        "Dados de poços existentes (perfil, vazão, nível).",
+        "Exigência ou Termo de Referência do órgão."
+      ],
+      "normas": [
+        "Lei 9.433/1997 e Lei estadual (GO) 13.123/1997 (recursos hídricos)",
+        "ABNT NBR 15495-1 (poços de monitoramento)",
+        "Resolução CONAMA 396/2008 (águas subterrâneas)"
+      ]
+    },
+    {
+      "slug": "auditorias-vistorias-ambientais",
+      "grupo": "passivos",
+      "icone": "prancheta",
+      "titulo": "Auditorias e vistorias ambientais",
+      "titulo_curto": "Auditorias e vistorias",
+      "resumo": "Vistorias de conformidade em mineração, agro e indústria, com não conformidades por risco e plano de ação.",
+      "o_que_e": "Vamos a campo verificar estruturas e rotinas — tanques, bacias de contenção, caixas separadoras, oficinas, lavadores, resíduos e efluentes — contra as licenças e as normas. Entregamos as não conformidades classificadas por risco e um plano de ação objetivo.",
+      "quando_exigido": [
+        "Condicionantes de licença e auditorias periódicas.",
+        "Antes de renovar licença ou depois de uma fiscalização.",
+        "Preparação para auditorias de clientes, bancos e certificações."
+      ],
+      "entregaveis": [
+        "Relatório de vistoria com fotos e não conformidades.",
+        "Matriz de criticidade e plano de ação com prazos.",
+        "Checklist por estrutura para acompanhamento.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Licenças e condicionantes vigentes.",
+        "Plantas e lista de estruturas.",
+        "Laudos e monitoramentos anteriores."
+      ],
+      "normas": [
+        "ABNT NBR 17505 e NR-20 (armazenamento de combustíveis)",
+        "Resolução CONAMA 430/2011 (efluentes)",
+        "Condicionantes da licença ambiental"
+      ]
+    },
+    {
+      "slug": "estudos-de-fauna",
+      "grupo": "biota",
+      "icone": "pegada",
+      "titulo": "Estudos de fauna",
+      "titulo_curto": "Estudos de fauna",
+      "resumo": "Levantamento, diagnóstico e monitoramento de fauna por equipe própria de biólogos, do campo ao relatório.",
+      "o_que_e": "Nossa equipe de biólogos faz as campanhas de campo, identifica as espécies, avalia o status de conservação e escreve os relatórios para o licenciamento — com dados primários (campo) e secundários (literatura e bases oficiais). Quando o projeto pede, somamos especialistas parceiros.",
+      "grupos_fauna": [
+        "Mastofauna (mamíferos terrestres)",
+        "Quiropterofauna (morcegos)",
+        "Ictiofauna (peixes)",
+        "Herpetofauna (anfíbios e répteis)",
+        "Avifauna (aves)",
+        "Entomofauna vetora"
+      ],
+      "quando_exigido": [
+        "Estudos ambientais para licenciamento (diagnóstico de fauna).",
+        "Barramentos e canais de irrigação (ictiofauna e entomofauna vetora).",
+        "Supressão de vegetação com resgate e salvamento de fauna.",
+        "Condicionantes de monitoramento de fauna."
+      ],
+      "entregaveis": [
+        "Campanhas de levantamento e monitoramento.",
+        "Identificação taxonômica e avaliação do status de conservação.",
+        "Relatórios de diagnóstico de fauna silvestre.",
+        "Relatórios de resgate e salvamento de fauna.",
+        "Pedido e acompanhamento de autorização de manejo de fauna no Sistema Ipê (SEMAD-GO)."
+      ],
+      "documentos": [
+        "Termo de Referência ou exigência do órgão ambiental.",
+        "Limites da área de estudo (KML, SHP).",
+        "Cronograma do empreendimento."
+      ],
+      "diferenciais": [
+        {
+          "icone": "calendario",
+          "texto": "Campanhas em fins de semana e feriados, quando o projeto pede."
+        },
+        {
+          "icone": "maleta",
+          "texto": "Equipamentos próprios para os levantamentos."
+        },
+        {
+          "icone": "livro",
+          "texto": "Acervo técnico para identificação de mamíferos e morcegos."
+        },
+        {
+          "icone": "mapa",
+          "texto": "Atendimento em diferentes municípios de Goiás."
+        }
+      ],
+      "fotos": [
+        {
+          "arquivo": "campo-biologa-960.jpg",
+          "legenda": "Campanha de campo",
+          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado."
+        },
+        {
+          "arquivo": "fauna-onca-parda-960.jpg",
+          "legenda": "Onça-parda em armadilha fotográfica",
+          "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica."
+        },
+        {
+          "arquivo": "fauna-morcego-960.jpg",
+          "legenda": "Quiropterofauna",
+          "alt": "Morcego capturado para identificação, apoiado na luva do pesquisador."
+        },
+        {
+          "arquivo": "fauna-roedor-biometria-960.jpg",
+          "legenda": "Biometria de pequeno mamífero",
+          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva."
+        },
+        {
+          "arquivo": "fauna-ave-rede-neblina-960.jpg",
+          "legenda": "Ave em rede de neblina",
+          "alt": "Ave de bico vermelho e peito pintado, segura na mão após captura em rede de neblina."
+        },
+        {
+          "arquivo": "fauna-serpente-960.jpg",
+          "legenda": "Herpetofauna – busca ativa",
+          "alt": "Serpente com padrão em manchas sobre o solo, à noite."
+        },
+        {
+          "arquivo": "fauna-tucano-960.jpg",
+          "legenda": "Avifauna",
+          "alt": "Tucano-toco pousado em galho contra o céu."
+        }
+      ],
+      "normas": [
+        "Lei 5.197/1967 (Proteção à Fauna)",
+        "Instrução Normativa IBAMA 146/2007 (referência para manejo de fauna em licenciamento)",
+        "Portaria MMA 148/2022 (espécies ameaçadas)",
+        "Normas da SEMAD-GO para autorização de manejo de fauna"
+      ]
+    },
+    {
+      "slug": "estudos-de-flora",
+      "grupo": "biota",
+      "icone": "arvore",
+      "titulo": "Estudos de flora",
+      "titulo_curto": "Estudos de flora",
+      "resumo": "Inventário florestal, levantamento de vegetação nativa, laudos para corte de árvores isoladas e resgate de flora.",
+      "o_que_e": "Estudos que caracterizam a vegetação de uma área — composição de espécies, volume, espécies protegidas ou ameaçadas — para embasar pedidos de supressão, laudos de vegetação e programas de resgate.",
+      "quando_exigido": [
+        "Pedido de supressão de vegetação nativa (Lei 12.651/2012, art. 26).",
+        "Corte de árvores isoladas.",
+        "Licenciamento que envolva vegetação nativa.",
+        "Comprovação de remanescentes para CAR e ITR."
+      ],
+      "entregaveis": [
+        "Inventário florestal com parcelas e cálculo de volume.",
+        "Levantamento florístico e fitossociológico.",
+        "Relatórios para corte de árvores isoladas.",
+        "Relatórios de resgate e salvamento de flora."
+      ],
+      "documentos": [
+        "Limites da área de intervenção (KML, SHP).",
+        "Matrícula e recibo do CAR.",
+        "Projeto ou finalidade da intervenção."
+      ],
+      "normas": [
+        "Lei 12.651/2012 (Código Florestal)",
+        "Lei estadual (GO) 18.104/2013 (Política Florestal de Goiás)",
+        "Portaria MMA 148/2022 (espécies ameaçadas)"
+      ]
+    },
+    {
+      "slug": "planos-e-programas-ambientais",
+      "grupo": "biota",
+      "icone": "prancheta",
+      "titulo": "Planos e programas ambientais",
+      "titulo_curto": "Planos e programas",
+      "resumo": "PCA, planos de resgate, monitoramento de fauna e manejo de canais de irrigação para atender condicionantes.",
+      "o_que_e": "Depois da licença vêm as condicionantes. Elaboramos os planos e programas que o órgão ambiental exige e os relatórios que comprovam a execução.",
+      "quando_exigido": [
+        "Condicionantes de licença ambiental.",
+        "Supressão de vegetação, enchimento de reservatórios e obras em cursos d'água.",
+        "Operação de barramentos e canais de irrigação."
+      ],
+      "entregaveis": [
+        "Plano de Controle Ambiental (PCA) e medidas de minimização de impactos.",
+        "Plano de levantamento, salvamento e monitoramento de fauna silvestre.",
+        "Plano de resgate e translocação de ictiofauna e anfíbios.",
+        "Plano de manejo e monitoramento de canais de irrigação.",
+        "Documentação para atendimento de condicionantes.",
+        "Plantas, mapas e memoriais para EIA/RIMA, PRAD e PCA."
+      ],
+      "documentos": [
+        "Licença e lista de condicionantes.",
+        "Estudos ambientais do processo.",
+        "Cronograma da obra ou da operação."
+      ],
+      "normas": [
+        "Resolução CONAMA 237/1997",
+        "Lei estadual (GO) 20.694/2019",
+        "Termo de Referência do órgão licenciador"
+      ]
+    },
+    {
+      "slug": "laudo-itr-vtn",
+      "grupo": "geo",
+      "icone": "laudo",
+      "titulo": "Laudo técnico para ITR e avaliação do VTN",
+      "titulo_curto": "Laudo ITR e VTN",
+      "resumo": "Laudo de avaliação do Valor da Terra Nua (ABNT NBR 14653-3) e laudo ambiental para responder ao Termo de Intimação Fiscal.",
+      "o_que_e": "Na malha fiscal do ITR, a Receita cruza a DITR com o SIPT, o CAR e outras bases. Para comprovar o valor declarado e as áreas não tributáveis, o contribuinte precisa de laudo técnico. Entregamos dois laudos em um relatório: o ambiental, com APP, Reserva Legal e vegetação nativa comprovadas por imagens de satélite desde 2000, e o de avaliação do VTN conforme a NBR 14653-3, ambos com ART.",
+      "quando_exigido": [
+        "Recebimento de Termo de Intimação Fiscal do ITR.",
+        "VTN declarado abaixo do valor de referência do SIPT.",
+        "APP e Reserva Legal declaradas sem comprovação.",
+        "Revisão preventiva antes de entregar a DITR."
+      ],
+      "entregaveis": [
+        "Laudo de avaliação do VTN conforme ABNT NBR 14653-3.",
+        "Laudo ambiental com análise multitemporal de imagens de satélite.",
+        "Mapas de APP, Reserva Legal e uso do solo sobre o perímetro SIGEF e o CAR.",
+        "Quadro declarado × apurado por exercício.",
+        "ART do responsável técnico."
+      ],
+      "documentos": [
+        "Termo de Intimação Fiscal.",
+        "DITRs dos exercícios intimados.",
+        "Matrícula, CCIR, recibo do CAR e certificação SIGEF, se houver.",
+        "ADA ou outros comprovantes ambientais, se houver."
+      ],
+      "normas": [
+        "Lei 9.393/1996, arts. 10 e 14",
+        "ABNT NBR 14653-3 – Avaliação de imóveis rurais",
+        "Lei 12.651/2012 (Código Florestal)"
+      ]
+    },
+    {
+      "slug": "laudo-prodes-analise-multitemporal",
+      "grupo": "geo",
+      "icone": "satelite",
+      "titulo": "Laudo PRODES e análise multitemporal",
+      "titulo_curto": "Laudo PRODES",
+      "resumo": "Série histórica de imagens de satélite para verificar polígonos de desmatamento e áreas consolidadas antes de 22/07/2008.",
+      "o_que_e": "Quando um polígono do PRODES trava a venda ou o crédito, é preciso mostrar o que de fato aconteceu na área. Montamos a série temporal (Landsat, Sentinel, CBERS e imagens de alta resolução), classificamos cada polígono e entregamos laudo, mapas e KML. O laudo mostra o que as imagens mostram: se houve supressão depois de 2008 sem autorização, indicamos o caminho de regularização.",
+      "quando_exigido": [
+        "Bloqueio em protocolos socioambientais de compra de gado ou grãos.",
+        "Comprovação de área rural consolidada (Lei 12.651/2012, art. 3º, IV).",
+        "Contestação de falso positivo de desmatamento.",
+        "Instrução de CAR, PRA e regularização."
+      ],
+      "entregaveis": [
+        "Recorte oficial do PRODES sobre o perímetro do CAR.",
+        "Série de imagens por polígono, com data, satélite e órbita/ponto.",
+        "Mapa de situação por classe de risco e comparação antes/depois.",
+        "KML para abrir no Google Earth.",
+        "Laudo técnico com ART."
+      ],
+      "documentos": [
+        "Recibo e shapefile do CAR.",
+        "Relatório ou print do bloqueio, se houver.",
+        "ASV ou autorizações anteriores, se existirem."
+      ],
+      "normas": [
+        "Lei 12.651/2012, art. 3º, IV (marco de 22/07/2008)",
+        "PRODES Cerrado – INPE",
+        "Guia técnico exigido pelo comprador"
+      ]
+    },
+    {
+      "slug": "topografia-drone",
+      "grupo": "geo",
+      "icone": "drone",
+      "titulo": "Topografia, planialtimétrico e levantamento com drone",
+      "titulo_curto": "Topografia e drone",
+      "resumo": "Planialtimétrico, ortofotos de 2 a 5 cm/pixel, Modelo Digital de Terreno e curvas de nível.",
+      "o_que_e": "Levantamentos com GNSS/RTK e estação total, complementados por voos de drone com pontos de controle. O resultado é uma base precisa para projetos de engenharia, terraplenagem, barragens, loteamentos e regularização.",
+      "quando_exigido": [
+        "Projetos de obras, barragens, estradas e loteamentos.",
+        "Cálculo de volumes (cortes, aterros, pilhas).",
+        "Base cartográfica para licenciamento e estudos ambientais."
+      ],
+      "entregaveis": [
+        "Levantamento e mapa planialtimétrico cadastral.",
+        "Ortofoto de alta resolução (2 a 5 cm/pixel).",
+        "Modelo Digital de Terreno (MDT/MDE) e curvas de nível.",
+        "Arquivos em DWG, SHP, KML e GeoTIFF, com relatório e ART."
+      ],
+      "documentos": [
+        "Área de interesse (KML ou croqui).",
+        "Finalidade do levantamento e precisão desejada.",
+        "Projetos existentes, se houver."
+      ],
+      "normas": [
+        "ABNT NBR 13133 – Execução de levantamento topográfico",
+        "RBAC-E nº 94 (ANAC) e ICA 100-40 (DECEA) para operação de drones"
+      ]
+    },
+    {
+      "slug": "mapas-tematicos-geoprocessamento",
+      "grupo": "geo",
+      "icone": "camadas",
+      "titulo": "Mapas temáticos e geoprocessamento",
+      "titulo_curto": "Mapas e geoprocessamento",
+      "resumo": "Uso do solo, APP, Reserva Legal, série histórica e plantas para EIA/RIMA, PRAD e PCA.",
+      "o_que_e": "Transformamos dados de campo, imagens de satélite e bases oficiais (SIGEF, SICAR, IBGE) em mapas que respondem perguntas concretas: onde está a APP, quanto de vegetação nativa existia em 2008, o que mudou entre 2000 e hoje.",
+      "quando_exigido": [
+        "Instrução de CAR, DAI, licenciamento e laudos de ITR.",
+        "Comprovação de área consolidada ou de vegetação remanescente.",
+        "Planejamento de uso do solo e de compensação ambiental."
+      ],
+      "entregaveis": [
+        "Mapas de uso e cobertura do solo.",
+        "Delimitação de APP e Reserva Legal.",
+        "Série histórica e mapa de estabilidade da vegetação.",
+        "Plantas e memoriais para EIA/RIMA, PRAD e PCA.",
+        "Arquivos SHP, KML e PDF em SIRGAS 2000."
+      ],
+      "documentos": [
+        "Limites do imóvel (SIGEF, CAR, KML ou planta).",
+        "Finalidade do mapa (processo, laudo, planejamento)."
+      ],
+      "normas": [
+        "Lei 12.651/2012, arts. 4º e 12 (APP e Reserva Legal)",
+        "SIRGAS 2000 – referencial geodésico oficial (IBGE)"
+      ]
+    }
+  ]
+}

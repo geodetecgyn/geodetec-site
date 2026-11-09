@@ -1,0 +1,186 @@
+{
+  "categorias": [
+    "Fauna",
+    "Laudos ITR/VTN",
+    "Georreferenciamento",
+    "CAR/DAI",
+    "Licenciamento",
+    "Flora",
+    "Topografia"
+  ],
+  "credito_satelite": "Imagens: Google Earth Pro (Maxar/Airbus)",
+  "projetos": [
+    {
+      "id": "fauna-campanhas-goias",
+      "categoria": "Fauna",
+      "titulo": "Levantamento e monitoramento de fauna – campanhas em Goiás",
+      "periodo": "Licenciamento ambiental",
+      "servico": "estudos-de-fauna",
+      "descricao": "Campanhas de campo com armadilhas fotográficas, redes de neblina, busca ativa diurna e noturna e biometria, cobrindo mastofauna, quiropterofauna, avifauna e herpetofauna, com relatórios para o órgão licenciador.",
+      "imagens": [
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-onca-parda",
+          "largura": 1600,
+          "altura": 837,
+          "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica.",
+          "legenda": "Onça-parda registrada por armadilha fotográfica."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "campo-biologa",
+          "largura": 1080,
+          "altura": 1080,
+          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado.",
+          "legenda": "Registro fotográfico em campanha de campo."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-morcego",
+          "largura": 1600,
+          "altura": 984,
+          "alt": "Morcego capturado para identificação, apoiado na luva do pesquisador.",
+          "legenda": "Quiropterofauna: captura para identificação."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-ave-rede-neblina",
+          "largura": 960,
+          "altura": 845,
+          "alt": "Ave de bico vermelho e peito pintado, segura na mão após captura em rede de neblina.",
+          "legenda": "Avifauna: ave capturada em rede de neblina."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-roedor-biometria",
+          "largura": 1600,
+          "altura": 888,
+          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva.",
+          "legenda": "Mastofauna: biometria de pequeno mamífero."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-serpente",
+          "largura": 902,
+          "altura": 1440,
+          "alt": "Serpente com padrão em manchas sobre o solo, à noite.",
+          "legenda": "Herpetofauna: busca ativa noturna."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-perereca",
+          "largura": 960,
+          "altura": 960,
+          "alt": "Perereca verde pousada na ponta do dedo do pesquisador, à noite.",
+          "legenda": "Herpetofauna: anfíbio."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-macaco-prego",
+          "largura": 1600,
+          "altura": 1200,
+          "alt": "Macaco-prego entre os galhos de uma árvore.",
+          "legenda": "Mastofauna: primata."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-tucano",
+          "largura": 1600,
+          "altura": 1600,
+          "alt": "Tucano-toco pousado em galho contra o céu.",
+          "legenda": "Avifauna: tucano-toco."
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "fauna-ariramba",
+          "largura": 1600,
+          "altura": 996,
+          "alt": "Ave verde e ruiva de bico longo pousada em um galho na mata.",
+          "legenda": "Avifauna: ariramba."
+        }
+      ]
+    },
+    {
+      "id": "laudo-itr-vtn-goias",
+      "categoria": "Laudos ITR/VTN",
+      "titulo": "Laudo de ITR e VTN – imóvel rural em Goiás",
+      "periodo": "Exercícios 2021–2025",
+      "servico": "laudo-itr-vtn",
+      "descricao": "Dois laudos em um relatório para responder à malha fiscal do ITR: (1) laudo ambiental com APP, Reserva Legal e vegetação nativa, a partir de imagens de satélite de 2000 a 2026 sobre o perímetro SIGEF e o CAR; (2) laudo de avaliação do Valor da Terra Nua conforme a ABNT NBR 14653-3.",
+      "imagens": [
+        {
+          "arquivo": "mapa_app_reserva_legal",
+          "largura": 2451,
+          "altura": 2200,
+          "alt": "Mapa de imóvel rural sobre imagem de satélite, com perímetro em amarelo, Área de Preservação Permanente em azul-claro e Reserva Legal em verde hachurado; entorno escurecido.",
+          "legenda": "APP e Reserva Legal sobre o perímetro certificado.",
+          "legenda_mapa": [
+            [
+              "#FFE95A",
+              "Perímetro"
+            ],
+            [
+              "#3FD0FF",
+              "APP"
+            ],
+            [
+              "#7DDB5C",
+              "Reserva Legal"
+            ]
+          ],
+          "satelite": true
+        },
+        {
+          "arquivo": "mapa_estabilidade_vegetacao",
+          "largura": 1757,
+          "altura": 2000,
+          "alt": "Mapa de estabilidade da vegetação do imóvel: vegetação estável em verde-escuro, vegetação variável em verde-claro e área aberta em bege, dentro do perímetro amarelo.",
+          "legenda": "Estabilidade da vegetação na série histórica.",
+          "legenda_mapa": [
+            [
+              "#1E8A3A",
+              "Vegetação estável"
+            ],
+            [
+              "#7DDB5C",
+              "Vegetação variável"
+            ],
+            [
+              "#E8DFC8",
+              "Área aberta"
+            ],
+            [
+              "#FFE95A",
+              "Perímetro"
+            ]
+          ],
+          "satelite": true
+        },
+        {
+          "arquivo": "serie_historica_2000",
+          "largura": 966,
+          "altura": 1100,
+          "alt": "Imagem de satélite do imóvel no ano 2000, com perímetro em amarelo e limites de vegetação em verde.",
+          "legenda": "Série histórica – 2000.",
+          "satelite": true
+        },
+        {
+          "arquivo": "serie_historica_2010",
+          "largura": 966,
+          "altura": 1100,
+          "alt": "Imagem de satélite do imóvel em 2010, com perímetro em amarelo e limites de vegetação em verde.",
+          "legenda": "Série histórica – 2010.",
+          "satelite": true
+        },
+        {
+          "arquivo": "serie_historica_2024",
+          "largura": 966,
+          "altura": 1100,
+          "alt": "Imagem de satélite do imóvel em 2024, com perímetro em amarelo e limites de vegetação em verde.",
+          "legenda": "Série histórica – 2024.",
+          "satelite": true
+        }
+      ]
+    }
+  ]
+}

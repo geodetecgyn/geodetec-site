@@ -12,10 +12,10 @@
   'use strict';
 
   const doc = document.documentElement;
-  const BASE = doc.dataset.base || '';               // "" na raiz, "../" nas páginas de /servicos/
-  const ICONES = BASE + 'assets/img/icons.svg';
-  const IMG = BASE + 'assets/img/projetos/';
-  const pasta = img => `${BASE}assets/img/${img.pasta || 'projetos'}/`;
+  const BASE = doc.dataset.base || '';               // "" na raiz, "" nas páginas de /
+  const ICONES = BASE + 'icons.svg';
+  const IMG = BASE + '';
+  const pasta = img => `${BASE}`;
   const $ = (s, el = document) => el.querySelector(s);
   const $$ = (s, el = document) => [...el.querySelectorAll(s)];
   const reduzMov = matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -25,7 +25,7 @@
   const vazio = v => !v || /^\[\[.*\]\]$/.test(String(v).trim());
 
   const cache = {};
-  const json = nome => (cache[nome] ||= fetch(`${BASE}data/${nome}.json`, { cache: 'no-cache' })
+  const json = nome => (cache[nome] ||= fetch(`${BASE}${nome}.json`, { cache: 'no-cache' })
     .then(r => { if (!r.ok) throw new Error(nome); return r.json(); }));
 
   /* ---------- Marcadores [[...]] bem visíveis ---------- */
@@ -112,7 +112,7 @@
         return `<div class="grupo rv"><div class="grupo-cab"><h3>${esc(g.titulo)}</h3><p>${esc(g.resumo)}</p></div>
           <ul class="grade-serv" style="--cols:${itens.length <= 4 ? itens.length : (itens.length % 4 === 0 || itens.length % 4 === 3 ? 4 : 3)}">${itens.map(s => `<li><article class="card-serv">
             <span class="ci">${icone(s.icone)}</span>
-            <div><h4><a href="${BASE}servicos/${s.slug}.html">${esc(s.titulo)}</a></h4><p>${esc(s.resumo)}</p>
+            <div><h4><a href="${BASE}${s.slug}.html">${esc(s.titulo)}</a></h4><p>${esc(s.resumo)}</p>
             <span class="mais" aria-hidden="true">Ver detalhes ${icone('seta')}</span></div>
           </article></li>`).join('')}</ul></div>`;
       };
@@ -178,7 +178,7 @@
             ${picture(capa)}<span class="qtd">${icone('ampliar')}${p.imagens.length}</span></button>
           <div class="corpo"><span class="tag">${esc(p.categoria)}</span><h3>${esc(p.titulo)}</h3>
             ${p.periodo ? `<p class="periodo">${esc(p.periodo)}</p>` : ''}<p>${esc(p.descricao)}</p>
-            ${p.servico ? `<a class="link-seta" href="${BASE}servicos/${esc(p.servico)}.html">Sobre o serviço ${icone('seta')}</a>` : ''}
+            ${p.servico ? `<a class="link-seta" href="${BASE}${esc(p.servico)}.html">Sobre o serviço ${icone('seta')}</a>` : ''}
             ${p.imagens.some(i => i.satelite) ? `<p class="credito">${esc(CREDITO)}</p>` : ''}</div>
         </article></li>`;
       }).join('') : `<li class="vazio">Novos projetos desta categoria serão publicados em breve.</li>`;

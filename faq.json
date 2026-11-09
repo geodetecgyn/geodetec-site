@@ -1,0 +1,34 @@
+[
+  {
+    "pergunta": "O que é o CAR?",
+    "resposta": "O Cadastro Ambiental Rural é o registro eletrônico obrigatório de todos os imóveis rurais (Lei 12.651/2012, art. 29). Nele ficam o perímetro do imóvel e o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. É declaratório e depois passa pela análise do órgão ambiental estadual — em Goiás, a SEMAD. Estar inscrito é condição para o crédito agrícola (art. 78-A), mas a inscrição sozinha não regulariza passivos: isso depende da análise e, quando for o caso, do Programa de Regularização Ambiental."
+  },
+  {
+    "pergunta": "O que é a DAI?",
+    "resposta": "A Declaração Ambiental do Imóvel foi criada em Goiás pela Lei estadual 21.231/2022. É um formulário eletrônico em que o interessado declara, de forma voluntária, os passivos ambientais do imóvel (por exemplo, atividade sem licença, conversão de uso do solo ou intervenção em área protegida). Pode gerar um Termo de Compromisso Ambiental ou uma Declaração de Inexistência de Passivos e é usada na análise do licenciamento. Informação falsa ou omissa é infração administrativa, por isso recomendamos preparar a DAI com base técnica, como imagens históricas. [[CONFIRMAR regulamentação e plataforma vigentes]]"
+  },
+  {
+    "pergunta": "Quando o georreferenciamento é obrigatório?",
+    "resposta": "A Lei 6.015/1973 (art. 176, §§ 3º e 4º, incluídos pela Lei 10.267/2001) e o Decreto 4.449/2002 exigem o georreferenciamento certificado pelo INCRA em casos de desmembramento, parcelamento, remembramento e transferência de imóvel rural, observados os prazos do decreto. O Decreto 12.689/2025 unificou o prazo final em 21/10/2029, sem distinção de área. Também é exigido em ações judiciais sobre imóveis rurais. Como cartórios e o INCRA já cobram em várias situações, consulte antes de iniciar uma venda, partilha ou divisão. [[CONFIRMAR prazo vigente — há projeto de lei para nova prorrogação]]"
+  },
+  {
+    "pergunta": "Recebi intimação do ITR. O que fazer?",
+    "resposta": "Não deixe passar o prazo indicado no próprio Termo de Intimação. Reúna as DITRs dos exercícios intimados, a matrícula, o CCIR, o recibo do CAR e eventuais comprovantes ambientais. Para comprovar o valor declarado, é preciso laudo de avaliação do VTN conforme a ABNT NBR 14653-3, com ART; para comprovar APP, Reserva Legal e vegetação nativa, um laudo ambiental. Sem comprovação, a Receita pode arbitrar o VTN com base no SIPT (Lei 9.393/1996, art. 14) e glosar as áreas, com multa e juros. Envolva também o seu contador ou advogado tributarista."
+  },
+  {
+    "pergunta": "Quanto tempo leva um licenciamento ambiental?",
+    "resposta": "Depende da atividade, do porte, da modalidade e de o processo chegar completo ao órgão. Como referência, a Resolução CONAMA 237/1997 (art. 14) fixa até 6 meses para cada licença e até 12 meses quando há EIA/RIMA ou audiência pública, sem contar o tempo de resposta às pendências. Em Goiás valem os prazos da Lei 20.694/2019 e de seus regulamentos [[CONFIRMAR prazos atuais]]. Estudos de fauna costumam exigir campanhas na seca e na chuva, o que também pesa no cronograma."
+  },
+  {
+    "pergunta": "Quando é preciso investigar contaminação do solo e da água subterrânea?",
+    "resposta": "Quando há atividade com potencial de contaminação — posto, oficina, indústria, armazenamento de produtos químicos ou combustíveis — e existe indício (vazamento, odor, mancha, histórico de uso) ou exigência do órgão ambiental, ou ainda na venda, desativação ou mudança de uso da área. O caminho segue a Resolução CONAMA 420/2009: avaliação preliminar, investigação confirmatória e, se confirmada a contaminação, investigação detalhada, avaliação de risco e intervenção. Entender o fluxo da água subterrânea (estudo hidrogeológico) é o que define onde instalar os poços de monitoramento."
+  },
+  {
+    "pergunta": "Para que serve o CCIR?",
+    "resposta": "O Certificado de Cadastro de Imóvel Rural é emitido pelo INCRA a partir do Sistema Nacional de Cadastro Rural. Sem ele não é possível desmembrar, arrendar, hipotecar, vender ou prometer em venda o imóvel rural, nem homologar partilha amigável ou judicial (Lei 5.868/1972, art. 22)."
+  },
+  {
+    "pergunta": "Vocês atendem engenheiros, consultorias e escritórios?",
+    "resposta": "Sim. Atuamos como parceiro técnico de engenheiros, consultorias ambientais, escritórios de projeto, imobiliárias rurais e escritórios de advocacia — no campo, no geoprocessamento ou na elaboração completa de peças técnicas com ART."
+  }
+]
