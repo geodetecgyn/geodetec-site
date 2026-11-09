@@ -1,0 +1,479 @@
+<!doctype html>
+<!--
+  GeoDetec – Soluções Geoespaciais e Ambientais
+  Site desenvolvido por Eduardo Silva Pinzetta
+  Engenheiro Ambiental e Sanitarista · Desenvolvedor Master (full-stack)
+  © 2026 GeoDetec / Eduardo Silva Pinzetta. Todos os direitos reservados.
+  Código proprietário: uso, cópia ou redistribuição sem autorização por escrito são proibidos.
+-->
+<html lang="pt-BR" data-base="">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-Du+OJKJSbdUgz5nrHeWWINvez6XKDDU/tyj/5c2uvwo='; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: blob:; connect-src 'self'; manifest-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'; frame-src 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="author" content="Eduardo Silva Pinzetta – Engenheiro Ambiental e Sanitarista · Desenvolvedor Master">
+<meta name="copyright" content="© 2026 GeoDetec / Eduardo Silva Pinzetta. Todos os direitos reservados.">
+<link rel="author" href="humans.txt">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>GeoDetec – Georreferenciamento e Projetos Ambientais em Goiás</title>
+<meta name="description" content="Georreferenciamento SIGEF/INCRA, CAR, DAI, licenciamento ambiental, estudos de fauna e flora, laudos de ITR e VTN (NBR 14653-3), topografia e drone em Goiás e no Tocantins (CAR). ART em cada trabalho.">
+<meta name="theme-color" content="#0A0E3A">
+<link rel="canonical" href="https://[[DOMINIO]]/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="GeoDetec">
+<meta property="og:title" content="GeoDetec – Georreferenciamento e Projetos Ambientais">
+<meta property="og:description" content="Precisão técnica, conformidade legal e ART em cada trabalho. Georreferenciamento, CAR, licenciamento, fauna, flora e laudos de ITR/VTN em Goiás.">
+<meta property="og:url" content="https://[[DOMINIO]]/">
+<meta property="og:image" content="https://[[DOMINIO]]/assets/img/og-geodetec.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GeoDetec – Georreferenciamento e projetos ambientais">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="GeoDetec – Georreferenciamento e Projetos Ambientais">
+<meta name="twitter:description" content="Precisão técnica, conformidade legal e ART em cada trabalho.">
+<meta name="twitter:image" content="https://[[DOMINIO]]/assets/img/og-geodetec.jpg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..900&display=swap">
+<link rel="preload" as="image" type="image/webp" href="assets/img/projetos/mapa_app_reserva_legal-960.webp" imagesrcset="assets/img/projetos/mapa_app_reserva_legal-480.webp 480w, assets/img/projetos/mapa_app_reserva_legal-960.webp 960w, assets/img/projetos/mapa_app_reserva_legal-1600.webp 1600w" imagesizes="(min-width:1024px) 70vw, 140vw" fetchpriority="high">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["LocalBusiness", "ProfessionalService"],
+  "@id": "https://[[DOMINIO]]/#empresa",
+  "name": "GeoDetec – Soluções Geoespaciais e Ambientais",
+  "url": "https://[[DOMINIO]]/",
+  "logo": "https://[[DOMINIO]]/assets/img/icon-512.png",
+  "image": "https://[[DOMINIO]]/assets/img/og-geodetec.jpg",
+  "description": "Georreferenciamento, geoprocessamento, licenciamento ambiental, estudos de fauna e flora e laudos técnicos em Goiás.",
+  "telephone": "+[[WHATSAPP_COM_DDI]]",
+  "email": "[[EMAIL]]",
+  "taxID": "[[CNPJ]]",
+  "address": { "@type": "PostalAddress", "addressRegion": "GO", "addressCountry": "BR", "addressLocality": "[[CIDADE_SEDE]]" },
+  "areaServed": [{ "@type": "State", "name": "Goiás" }, { "@type": "State", "name": "Tocantins" }],
+  "sameAs": ["https://www.instagram.com/[[INSTAGRAM]]"],
+  "knowsAbout": ["Georreferenciamento de imóveis rurais", "SIGEF", "Cadastro Ambiental Rural", "Licenciamento ambiental", "Estudos de fauna", "Inventário florestal", "ITR", "ABNT NBR 14653-3", "Aerofotogrametria com drone"]
+}
+</script>
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo" id="topo">
+  <div class="wrap">
+    <a class="marca" href="#inicio" aria-label="GeoDetec – início">
+      <img class="g" src="assets/img/marca/geodetec-globo-branco.png" width="219" height="160" alt="">
+      <img class="w" src="assets/img/marca/geodetec-nome-branco.png" width="469" height="120" alt="GeoDetec – Soluções Geoespaciais e Ambientais">
+    </a>
+    <nav class="nav" aria-label="Menu principal">
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+      <a class="btn btn--pri btn--p" href="#contato" data-wa="orcamento"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Solicitar orçamento</a>
+    </nav>
+    <button class="burger" type="button" aria-expanded="false" aria-controls="menu-movel" aria-label="Abrir menu">
+      <svg class="i i-m" aria-hidden="true"><use href="assets/img/icons.svg#i-menu"/></svg>
+      <svg class="i i-x" aria-hidden="true"><use href="assets/img/icons.svg#i-fechar"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="menu-movel" id="menu-movel" aria-label="Menu" hidden>
+  <nav aria-label="Menu principal (celular)">
+    <ul>
+      <li><a href="#servicos">Serviços <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li>
+      <li><a href="#projetos">Projetos <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li>
+      <li><a href="#como-trabalhamos">Como trabalhamos <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li>
+      <li><a href="#equipe">Equipe <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li>
+      <li><a href="#contato">Contato <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li>
+    </ul>
+  </nav>
+  <div class="botoes">
+    <a class="btn btn--pri" href="#contato" data-wa="orcamento"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Solicitar orçamento</a>
+    <a class="btn btn--sec" href="#contato">Falar com o Breno</a>
+  </div>
+</div>
+
+<main id="conteudo">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="inicio" aria-labelledby="hero-titulo">
+  <img class="marca-dagua" src="assets/img/marca/geodetec-globo-branco-grande.webp" width="1200" height="877" alt="" aria-hidden="true" loading="lazy" decoding="async">
+  <div class="wrap">
+    <div class="hero-visual">
+      <picture>
+        <source type="image/webp" srcset="assets/img/projetos/mapa_app_reserva_legal-480.webp 480w, assets/img/projetos/mapa_app_reserva_legal-960.webp 960w, assets/img/projetos/mapa_app_reserva_legal-1600.webp 1600w" sizes="(min-width:1024px) 70vw, 140vw">
+        <img src="assets/img/projetos/mapa_app_reserva_legal-960.jpg" srcset="assets/img/projetos/mapa_app_reserva_legal-480.jpg 480w, assets/img/projetos/mapa_app_reserva_legal-960.jpg 960w, assets/img/projetos/mapa_app_reserva_legal-1600.jpg 1600w" sizes="(min-width:1024px) 70vw, 140vw" width="1600" height="1436" alt="Imóvel rural visto por satélite, com perímetro em amarelo, APP em azul-claro e Reserva Legal em verde." fetchpriority="high" decoding="async">
+      </picture>
+      <div class="grade" aria-hidden="true"></div>
+      <div class="scan" aria-hidden="true"></div>
+      <div class="hud" aria-label="Legenda do mapa">
+        <span><i style="background:#FFE95A"></i>Perímetro</span>
+        <span><i style="background:#3FD0FF"></i>APP</span>
+        <span><i style="background:#7DDB5C"></i>Reserva Legal</span>
+      </div>
+      <p class="credito">Imagens: Google Earth Pro (Maxar/Airbus) · recorte ilustrativo</p>
+    </div>
+    <div class="hero-texto">
+      <p class="kicker">Soluções geoespaciais e ambientais · Goiás e Tocantins</p>
+      <h1 id="hero-titulo">Georreferenciamento <span class="l2">e <span class="vd">projetos ambientais</span></span></h1>
+      <p class="lead">Do levantamento de campo ao processo protocolado: <b>precisão técnica, conformidade legal e ART</b> em cada trabalho. Atuamos com equipe própria e em parceria com consultorias e profissionais.</p>
+      <div class="botoes">
+        <a class="btn btn--pri" href="#contato" data-wa="orcamento"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Solicitar orçamento</a>
+        <a class="btn btn--sec" href="#servicos">Ver serviços <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a>
+      </div>
+      <ul class="selos" aria-label="Sistemas e normas">
+        <li>INCRA/SIGEF</li><li>CAR</li><li>ART/CREA</li><li>NBR 14653-3</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="atalhos" aria-labelledby="atalhos-titulo">
+  <div class="wrap">
+    <h2 class="lbl" id="atalhos-titulo">O que você precisa?</h2>
+    <ul class="grade-atalhos"><li><a class="atalho" href="#servicos" data-tab="fundiario"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pin-mapa"/></svg></span><span><b>Regularizar imóvel rural</b><small>SIGEF, RL e APP, REURB, locação</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li><li><a class="atalho" href="#servicos" data-tab="ambiental"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-industria"/></svg></span><span><b>Licenciar um empreendimento</b><small>CAR em GO e TO, DAI, licenças</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li><li><a class="atalho" href="#servicos" data-tab="passivos"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-alerta"/></svg></span><span><b>Passivo ou área contaminada</b><small>Investigação, hidrogeologia, auditoria</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li><li><a class="atalho" href="#servicos" data-tab="biota"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pegada"/></svg></span><span><b>Estudo de fauna ou flora</b><small>Levantamento, resgate, monitoramento</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li><li><a class="atalho" href="#itr"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-laudo"/></svg></span><span><b>Recebi intimação do ITR</b><small>Laudo de VTN e laudo ambiental</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li><li><a class="atalho" href="#servicos" data-tab="geo"><span class="ci ci--p"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-satelite"/></svg></span><span><b>Laudo PRODES, mapas ou drone</b><small>Satélite, GNSS, topografia</small></span><svg class="i seta" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a></li></ul>
+  </div>
+</section>
+
+<!-- ===== SERVIÇOS ===== -->
+<section class="secao" id="servicos" aria-labelledby="serv-titulo">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">01</span>Serviços</p>
+      <h2 class="titulo" id="serv-titulo">Do campo ao <span class="vd">documento</span></h2>
+      <p class="lead">Da base cartográfica à <b>materialização física das áreas no campo</b>. Escolha o grupo e o serviço para ver o que é, quando é exigido e o que entregamos.</p>
+    </div>
+    <div class="tabs-serv" id="tabs-serv" role="tablist" aria-label="Grupos de serviços"></div>
+    <div id="lista-servicos" aria-live="polite">
+      <noscript>
+        <ul class="grade-serv">
+          <!-- GERADO:NOSCRIPT -->
+          <li><a href="servicos/georreferenciamento-sigef.html">Georreferenciamento INCRA/SIGEF</a></li>
+          <li><a href="servicos/reserva-legal-app.html">Reserva Legal e APP: mapeamento, demarcação e averbação</a></li>
+          <li><a href="servicos/locacao-supressao-aceiros-cercas.html">Locação em campo: áreas de supressão, aceiros e cercas</a></li>
+          <li><a href="servicos/ccir-itr-regularizacao-fundiaria.html">Regularização fundiária: CCIR, ITR, REURB, retificação e desmembramento</a></li>
+          <li><a href="servicos/due-diligence-certidoes.html">Due diligence ambiental e certidões</a></li>
+          <li><a href="servicos/car-cadastro-ambiental-rural.html">CAR – Cadastro Ambiental Rural (Goiás e Tocantins)</a></li>
+          <li><a href="servicos/dai-declaracao-ambiental-do-imovel.html">DAI – Declaração Ambiental do Imóvel</a></li>
+          <li><a href="servicos/licenciamento-ambiental-empreendimentos.html">Licenciamento ambiental de empreendimentos</a></li>
+          <li><a href="servicos/licenciamento-ambiental-loteamentos.html">Licenciamento ambiental de loteamentos</a></li>
+          <li><a href="servicos/saneamento-hidrossanitario-percolacao.html">Projeto hidrossanitário e teste de percolação</a></li>
+          <li><a href="servicos/outorgas-recursos-hidricos.html">Outorgas e recursos hídricos</a></li>
+          <li><a href="servicos/analise-passivos-ambientais.html">Análise de passivos ambientais</a></li>
+          <li><a href="servicos/gerenciamento-areas-contaminadas.html">Gerenciamento de áreas contaminadas</a></li>
+          <li><a href="servicos/estudos-hidrogeologicos.html">Estudos hidrogeológicos</a></li>
+          <li><a href="servicos/auditorias-vistorias-ambientais.html">Auditorias e vistorias ambientais</a></li>
+          <li><a href="servicos/estudos-de-fauna.html">Estudos de fauna</a></li>
+          <li><a href="servicos/estudos-de-flora.html">Estudos de flora</a></li>
+          <li><a href="servicos/planos-e-programas-ambientais.html">Planos e programas ambientais</a></li>
+          <li><a href="servicos/laudo-itr-vtn.html">Laudo técnico para ITR e avaliação do VTN</a></li>
+          <li><a href="servicos/laudo-prodes-analise-multitemporal.html">Laudo PRODES e análise multitemporal</a></li>
+          <li><a href="servicos/topografia-drone.html">Topografia, planialtimétrico e levantamento com drone</a></li>
+          <li><a href="servicos/mapas-tematicos-geoprocessamento.html">Mapas temáticos e geoprocessamento</a></li>
+          <!-- /GERADO:NOSCRIPT -->
+        </ul>
+      </noscript>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ITR ===== -->
+<section class="secao" id="itr" aria-labelledby="itr-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="itr rv">
+      <div>
+        <p class="kicker"><span class="num-sec">02</span>Malha fiscal do ITR</p>
+        <h2 class="titulo" id="itr-titulo">Recebeu intimação <span class="vd">do ITR?</span></h2>
+        <ol class="passos">
+          <li><span class="n">1</span><div><b>Cruzamento de dados</b><p>A Receita compara a DITR com o SIPT, o CAR e outras bases.</p></div></li>
+          <li><span class="n">2</span><div><b>Termo de Intimação Fiscal</b><p>Abre prazo para comprovar o VTN e as áreas declaradas.</p></div></li>
+          <li class="alerta"><span class="n">3</span><div><b>Sem laudo, a conta sobe</b><p>O VTN é arbitrado e as áreas são glosadas, com multa e juros (Lei 9.393/1996, art. 14).</p></div></li>
+        </ol>
+      </div>
+      <div class="itr-dir">
+        <p class="lbl">Motivos mais comuns</p>
+        <ul class="motivos">
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-tendencia"/></svg>VTN abaixo do valor de referência</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-folha"/></svg>APP e Reserva Legal sem prova</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-documento"/></svg>Área diferente da matrícula ou do CAR</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-cruzar"/></svg>Áreas somadas em duplicidade</li>
+        </ul>
+        <div class="solucao"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-escudo"/></svg>Laudo de VTN (ABNT NBR 14653-3) e laudo ambiental com ART comprovam o valor da terra e as áreas não tributáveis.</div>
+        <div class="botoes">
+          <a class="btn btn--pri" href="#contato" data-wa="itr"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Recebi intimação</a>
+          <a class="btn btn--sec" href="servicos/laudo-itr-vtn.html">Como é o laudo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAUNA ===== -->
+<section class="secao" id="fauna" aria-labelledby="fauna-titulo" style="padding-top:0">
+  <div class="wrap fauna">
+    <div class="rv">
+      <p class="kicker"><span class="num-sec">03</span>Fauna e biologia</p>
+      <h2 class="titulo" id="fauna-titulo">Estudos de fauna, <span class="vd">do campo ao relatório</span></h2>
+      <p class="lead">Equipe de biólogos para levantamento, diagnóstico, resgate e monitoramento de fauna no licenciamento — com especialistas parceiros quando o projeto pede.</p>
+      <ul class="chips" id="fauna-grupos" aria-label="Grupos estudados"></ul>
+      <ul class="difs" id="fauna-difs"></ul>
+      <div class="botoes" style="margin-top:28px">
+        <a class="btn btn--sec" href="servicos/estudos-de-fauna.html">Estudos de fauna <svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></a>
+        <a class="btn btn--sec" href="servicos/planos-e-programas-ambientais.html">Planos e programas</a>
+      </div>
+    </div>
+    <div class="fotos rv" id="fauna-fotos" aria-label="Fotos de campo"></div>
+  </div>
+</section>
+
+<!-- ===== PROJETOS ===== -->
+<section class="secao" id="projetos" aria-labelledby="proj-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">04</span>Projetos</p>
+      <h2 class="titulo" id="proj-titulo">Trabalhos <span class="vd">realizados</span></h2>
+      <p class="lead">Imagens recortadas e sem identificação do imóvel ou do cliente.</p>
+    </div>
+    <div class="filtros" id="filtros" role="group" aria-label="Filtrar projetos por categoria"></div>
+    <ul class="grade-proj" id="grade-proj" aria-live="polite"></ul>
+
+    <div class="analise">
+      <div class="painel vidro rv">
+        <h3>Análise multitemporal
+          <span class="anos" role="group" aria-label="Ano de comparação">
+            <button type="button" data-ano="2000" aria-pressed="true">2000</button>
+            <button type="button" data-ano="2010" aria-pressed="false">2010</button>
+          </span>
+        </h3>
+        <p>Arraste para comparar o mesmo imóvel em <span id="ano-antes">2000</span> e 2024.</p>
+        <div class="comparador" id="comparador">
+          <picture>
+            <source type="image/webp" srcset="assets/img/projetos/serie_historica_2024-480.webp 480w, assets/img/projetos/serie_historica_2024-960.webp 960w" sizes="(min-width:1024px) 560px, 92vw">
+            <img class="depois" src="assets/img/projetos/serie_historica_2024-960.jpg" srcset="assets/img/projetos/serie_historica_2024-480.jpg 480w, assets/img/projetos/serie_historica_2024-960.jpg 960w" sizes="(min-width:1024px) 560px, 92vw" width="966" height="1100" alt="Imóvel em 2024: perímetro em amarelo e limites de vegetação em verde." loading="lazy" decoding="async">
+          </picture>
+          <picture>
+            <source id="src-antes" type="image/webp" srcset="assets/img/projetos/serie_historica_2000-480.webp 480w, assets/img/projetos/serie_historica_2000-960.webp 960w" sizes="(min-width:1024px) 560px, 92vw">
+            <img class="antes" id="img-antes" src="assets/img/projetos/serie_historica_2000-960.jpg" srcset="assets/img/projetos/serie_historica_2000-480.jpg 480w, assets/img/projetos/serie_historica_2000-960.jpg 960w" sizes="(min-width:1024px) 560px, 92vw" width="966" height="1100" alt="O mesmo imóvel no ano 2000, para comparação." loading="lazy" decoding="async">
+          </picture>
+          <span class="rot esq" id="rot-antes">2000</span><span class="rot dir">2024</span>
+          <div class="barra" aria-hidden="true"><span class="alca"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-dividir"/></svg></span></div>
+          <input type="range" min="0" max="100" value="50" step="1" aria-label="Posição da comparação entre os anos">
+        </div>
+        <p class="credito">Imagens: Google Earth Pro (Maxar/Airbus)</p>
+      </div>
+
+      <div class="painel vidro rv">
+        <h3>Estabilidade da vegetação</h3>
+        <p>Cada pixel classificado ao longo da série: o que sempre foi vegetação, o que variou e o que é área aberta.</p>
+        <button type="button" class="mapa-est" data-lb-proj="laudo-itr-vtn-goias" data-lb-idx="1" aria-label="Ampliar mapa de estabilidade da vegetação">
+          <picture>
+            <source type="image/webp" srcset="assets/img/projetos/mapa_estabilidade_vegetacao-480.webp 480w, assets/img/projetos/mapa_estabilidade_vegetacao-960.webp 960w, assets/img/projetos/mapa_estabilidade_vegetacao-1600.webp 1600w" sizes="(min-width:1024px) 560px, 92vw">
+            <img src="assets/img/projetos/mapa_estabilidade_vegetacao-960.jpg" srcset="assets/img/projetos/mapa_estabilidade_vegetacao-480.jpg 480w, assets/img/projetos/mapa_estabilidade_vegetacao-960.jpg 960w, assets/img/projetos/mapa_estabilidade_vegetacao-1600.jpg 1600w" sizes="(min-width:1024px) 560px, 92vw" width="1757" height="2000" alt="Mapa de estabilidade da vegetação: verde-escuro estável, verde-claro variável e bege área aberta, dentro do perímetro amarelo." loading="lazy" decoding="async">
+          </picture>
+        </button>
+        <ul class="legenda">
+          <li><i style="background:#1E8A3A"></i>Vegetação estável</li>
+          <li><i style="background:#7DDB5C"></i>Vegetação variável</li>
+          <li><i style="background:#E8DFC8"></i>Área aberta</li>
+          <li><i style="background:#FFE95A"></i>Perímetro</li>
+        </ul>
+        <p class="credito">Imagens: Google Earth Pro (Maxar/Airbus)</p>
+      </div>
+    </div>
+    <div class="mapas-tipos rv">
+      <p class="lbl">Mapas que entregamos</p>
+      <ul><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-mapa"/></svg>Mapas de localização e planimétricos</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-folha"/></svg>APP, Reserva Legal e uso do solo</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-tendencia"/></svg>Série histórica e antes/depois</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-alvo"/></svg>Situação de polígonos PRODES por risco</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-arvore"/></svg>Estabilidade da vegetação</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pin-mapa"/></svg>Perímetro SIGEF × CAR × matrícula</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-camadas"/></svg>KML/SHP para Google Earth e ArcGIS</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-drone"/></svg>Ortofoto, MDT e curvas de nível</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-grafico"/></svg>Planialtimétrico</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-divisas"/></svg>Croqui de supressão para fiscalização</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-documento"/></svg>Plantas para EIA/RIMA, PRAD e PCA</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-gota"/></svg>Nascentes, hidrografia e topos de morro</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMO TRABALHAMOS ===== -->
+<section class="secao" id="como-trabalhamos" aria-labelledby="como-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">05</span>Como trabalhamos</p>
+      <h2 class="titulo" id="como-titulo">Cada etapa <span class="vd">revisada</span></h2>
+      <ul class="chips chips--ic"><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-alvo"/></svg>Precisão centimétrica</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-escudo"/></svg>Conformidade legal</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-caneta"/></svg>ART em cada trabalho</li><li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pessoas"/></svg>Equipe multidisciplinar</li></ul>
+    </div>
+    <ol class="linha-tempo rv">
+      <li><span class="ci"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-lupa"/></svg></span><div><span class="num">01</span><h3>Vistoria de campo</h3><p>Levantamento GNSS/RTK, drone, registro fotográfico e campanhas de fauna e flora.</p></div></li>
+      <li><span class="ci"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-camadas"/></svg></span><div><span class="num">02</span><h3>Geoprocessamento</h3><p>Processamento dos dados, imagens de satélite e bases oficiais (SIGEF, SICAR, IBGE).</p></div></li>
+      <li><span class="ci"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-folha"/></svg></span><div><span class="num">03</span><h3>Análise ambiental</h3><p>APP, Reserva Legal, vegetação, fauna e enquadramento legal.</p></div></li>
+      <li><span class="ci"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-grafico"/></svg></span><div><span class="num">04</span><h3>Avaliação</h3><p>Conferência entre matrícula, CAR e campo; laudos e avaliação do VTN quando aplicável.</p></div></li>
+      <li class="final"><span class="ci"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-caneta"/></svg></span><div><span class="num">05</span><h3>Revisão técnica e ART</h3><p>Revisão final e assinatura do responsável técnico, com ART.</p></div></li>
+    </ol>
+    <blockquote class="citacao vidro rv"><p>A assinatura é do responsável técnico. <span>O trabalho é de toda a equipe.</span></p></blockquote>
+  </div>
+</section>
+
+<!-- ===== EQUIPE ===== -->
+<section class="secao" id="equipe" aria-labelledby="equipe-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">06</span>Equipe</p>
+      <h2 class="titulo" id="equipe-titulo">Uma equipe, quatro engenharias <span class="vd">e biologia</span></h2>
+      <p class="lead">Profissionais habilitados no CREA e no CRBio, cada um na sua área, revisando o trabalho uns dos outros.</p>
+    </div>
+    <ul class="grade-areas" id="grade-areas"></ul>
+    <ul class="grade-pessoas" id="grade-pessoas" hidden></ul>
+  </div>
+</section>
+
+<!-- ===== PARCEIROS ===== -->
+<section class="secao" id="parceiros" aria-labelledby="parc-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">07</span>Parcerias</p>
+      <h2 class="titulo" id="parc-titulo">Trabalhamos <span class="vd">em parceria</span></h2>
+      <p class="lead">Cada projeto pede uma equipe. Somamos nossa equipe à de consultorias e profissionais parceiros — e também entramos como parceiro técnico no projeto de quem nos chama.</p>
+    </div>
+    <div class="parc-vias">
+      <div class="via vidro rv">
+        <h3>Somos parceiro técnico de</h3>
+        <p>Fazemos o campo, o geoprocessamento ou a peça técnica completa, com ART. Você segue à frente do seu cliente.</p>
+        <ul class="lista-parc">
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-broto"/></svg>Engenheiros agrônomos</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-capacete"/></svg>Engenheiros civis</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-compasso"/></svg>Arquitetos</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-folha"/></svg>Consultorias ambientais</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-grafico"/></svg>Escritórios de projetos</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-casa"/></svg>Imobiliárias rurais</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-balanca"/></svg>Advogados e escritórios jurídicos</li>
+        </ul>
+      </div>
+      <div class="via vidro rv">
+        <h3>Trabalhamos em rede com</h3>
+        <p>Quando o escopo pede outra especialidade, chamamos quem entende — sob a mesma coordenação técnica.</p>
+        <ul class="lista-parc">
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pessoas"/></svg>Outras consultorias ambientais</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-pegada"/></svg>Biólogos especialistas por grupo</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-camadas"/></svg>Geólogos e hidrogeólogos</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-laudo"/></svg>Laboratórios acreditados</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-drone"/></svg>Topógrafos e pilotos de drone</li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-balanca"/></svg>Assessoria jurídica ambiental</li>
+        </ul>
+      </div>
+    </div>
+    <div class="botoes rv" style="margin-top:24px"><a class="btn btn--pri" href="#contato" data-wa="parceria"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-aperto"/></svg>Quero ser parceiro</a></div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="secao" id="faq" aria-labelledby="faq-titulo">
+  <div class="wrap">
+    <div class="cab cab--centro rv">
+      <p class="kicker"><span class="num-sec">08</span>Dúvidas frequentes</p>
+      <h2 class="titulo" id="faq-titulo">Perguntas <span class="vd">frequentes</span></h2>
+    </div>
+    <div class="faq" id="lista-faq"></div>
+  </div>
+</section>
+
+<!-- ===== CONTATO ===== -->
+<section class="secao" id="contato" aria-labelledby="contato-titulo" style="padding-top:0">
+  <div class="wrap">
+    <div class="cab rv">
+      <p class="kicker"><span class="num-sec">09</span>Contato</p>
+      <h2 class="titulo" id="contato-titulo">Fale direto com <span class="vd">o técnico</span></h2>
+      <p class="lead">Conte o que você precisa. A resposta vem de quem entende do assunto.</p>
+    </div>
+    <div class="contato">
+      <div class="cartao vidro rv">
+        <div class="pessoa-ct">
+          <span class="mono" aria-hidden="true">BG</span>
+          <div><h3 data-ct="responsavel">Breno Ferreira Guimarães</h3><p data-ct="funcao">Atendimento técnico e parcerias</p></div>
+        </div>
+        <div class="botoes">
+          <a class="btn btn--pri" href="#contato" data-wa="orcamento"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Chamar no WhatsApp</a>
+          <button class="btn btn--sec" type="button" id="salvar-contato"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-contato"/></svg>Salvar contato</button>
+        </div>
+        <ul class="dados">
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-email"/></svg><a data-ct="email" href="#">[[EMAIL]]</a></li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-instagram"/></svg><a data-ct="instagram" href="#" rel="noopener" target="_blank">[[INSTAGRAM]]</a></li>
+          <li><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-mapa"/></svg><span data-ct="regiao">[[CIDADES/REGIÃO]]</span></li>
+        </ul>
+      </div>
+
+      <form class="cartao vidro form rv" id="form-contato" novalidate>
+        <div class="duas">
+          <div class="campo"><label for="f-nome">Nome</label><input id="f-nome" name="nome" autocomplete="name" required aria-describedby="e-nome"><span class="erro" id="e-nome" aria-live="polite"></span></div>
+          <div class="campo"><label for="f-mun">Município</label><input id="f-mun" name="municipio" autocomplete="address-level2" required aria-describedby="e-mun"><span class="erro" id="e-mun" aria-live="polite"></span></div>
+        </div>
+        <div class="campo"><label for="f-serv">Serviço</label>
+          <select id="f-serv" name="servico"><option value="">Selecione (opcional)</option></select>
+        </div>
+        <div class="campo"><label for="f-msg">Mensagem</label><textarea id="f-msg" name="mensagem" rows="4" placeholder="Ex.: área aproximada, prazo, se já tem CAR ou SIGEF…"></textarea></div>
+        <button class="btn btn--pri btn--bloco" type="submit"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg>Enviar pelo WhatsApp</button>
+        <p class="aviso-form">O site não guarda seus dados: o formulário só monta a mensagem e abre o WhatsApp. Veja a <a href="privacidade.html">política de privacidade</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="rodape">
+  <div class="wrap">
+    <div>
+      <a class="marca" href="#inicio" aria-label="GeoDetec – voltar ao início">
+        <img class="g" src="assets/img/marca/geodetec-globo-branco.png" width="219" height="160" alt="" loading="lazy">
+        <img class="w" src="assets/img/marca/geodetec-nome-branco.png" width="469" height="120" alt="GeoDetec – Soluções Geoespaciais e Ambientais" loading="lazy">
+      </a>
+      <p>Georreferenciamento, geoprocessamento e projetos ambientais em Goiás.</p>
+      <p>CNPJ <span data-ct="cnpj">[[CNPJ]]</span></p>
+    </div>
+    <nav aria-label="Rodapé">
+      <h2>Navegação</h2>
+      <ul>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#como-trabalhamos">Como trabalhamos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#faq">Perguntas frequentes</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contato</h2>
+      <ul>
+        <li><a href="#contato" data-wa="orcamento">WhatsApp –&nbsp;<span data-ct="responsavel">Breno Ferreira Guimarães</span></a></li>
+        <li><a data-ct="email" href="#">[[EMAIL]]</a></li>
+        <li><a data-ct="instagram" href="#" rel="noopener" target="_blank">[[INSTAGRAM]]</a></li>
+      </ul>
+    </div>
+    <div class="base">
+      <span>© GeoDetec – Soluções Geoespaciais e Ambientais</span>
+      <span><a href="privacidade.html">Política de privacidade</a> · Imagens de satélite: Google Earth Pro (Maxar/Airbus)</span>
+    </div>
+  </div>
+</footer>
+
+<a class="wa-flut" href="#contato" data-wa="orcamento" aria-label="Falar no WhatsApp"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-whatsapp"/></svg></a>
+
+<dialog class="lb" id="lightbox" aria-label="Visualizador de imagens">
+  <div class="lb-topo">
+    <span class="lb-cont" id="lb-cont"></span>
+    <button class="lb-btn" type="button" data-lb="fechar" aria-label="Fechar"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-fechar"/></svg></button>
+  </div>
+  <div class="lb-palco" id="lb-palco">
+    <button class="lb-btn lb-ant" type="button" data-lb="ant" aria-label="Imagem anterior"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta-esq"/></svg></button>
+    <img id="lb-img" alt="">
+    <button class="lb-btn lb-prox" type="button" data-lb="prox" aria-label="Próxima imagem"><svg class="i" aria-hidden="true"><use href="assets/img/icons.svg#i-seta"/></svg></button>
+  </div>
+  <div class="lb-rodape"><p id="lb-leg"></p><ul class="legenda" id="lb-cores"></ul><p class="credito" id="lb-cred"></p></div>
+</dialog>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>

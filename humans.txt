@@ -1,0 +1,11 @@
+/* EQUIPE */
+Desenvolvimento, arquitetura e conteúdo técnico: Eduardo Silva Pinzetta
+Formação: Engenheiro Ambiental e Sanitarista
+Função: Desenvolvedor Master (full-stack) e proprietário do código
+Local: Goiás, Brasil
+
+/* SITE */
+Empresa: GeoDetec – Soluções Geoespaciais e Ambientais
+Tecnologia: HTML5, CSS3, JavaScript vanilla (ES6+), GitHub Pages
+Padrões: mobile-first, WCAG AA, Content-Security-Policy
+Última atualização: 2026/11
