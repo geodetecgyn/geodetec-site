@@ -18,7 +18,7 @@
   --gutter:16px; --max:1200px; --header:64px;
   --f-display:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
   --f-texto:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  color-scheme:dark;
+  color-scheme:only dark;
 }
 @media (min-width:768px){:root{--gutter:28px}}
 @media (min-width:1024px){:root{--header:76px;--gutter:40px}}
@@ -611,3 +611,41 @@ mark.ph{background:rgba(255,233,90,.16);color:var(--perimetro);border:1px dashed
   .area p{font-size:.8rem}
   .area .ci{width:42px;height:42px;flex-basis:42px}
 }
+
+/* ===== v4: geoprocessamento e crédito discreto ===== */
+.credito--min{font-size:.62rem!important;opacity:.55}
+.hero-visual .credito--min{top:auto;left:auto;right:var(--gutter);bottom:31%;max-width:none}
+@media (min-width:1024px){.hero-visual .credito--min{bottom:18%;right:40px}}
+.geo-grade{display:grid;gap:16px}
+@media (min-width:1024px){.geo-grade{grid-template-columns:1.1fr 1fr;gap:20px}}
+.geo-bloco{padding:22px;border-radius:var(--raio-g)}
+@media (min-width:768px){.geo-bloco{padding:30px}}
+.geo-bloco h3{font-size:.8rem;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:var(--verde-claro);margin-bottom:18px}
+.fr{list-style:none;display:grid;gap:14px}
+.fr-cab{display:flex;justify-content:space-between;gap:12px;font-size:.92rem;margin-bottom:6px}
+.fr-cab span{color:var(--txt-3);font-size:.84rem;text-align:right}
+.fr-barra{height:8px;border-radius:8px;background:rgba(255,255,255,.07);overflow:hidden}
+.fr-barra i{display:block;height:100%;border-radius:8px;background:linear-gradient(90deg,#2E8B3A,#7DDB5C,#3FD0FF)}
+.fr-nota{margin:18px 0 0;font-size:.85rem;color:var(--txt-3);line-height:1.5}
+.geo-usos{list-style:none;display:grid;gap:12px}
+.geo-usos li{display:flex;gap:12px;align-items:center;font-size:.95rem;color:var(--txt-2)}
+.geo-usos .i{color:var(--verde-claro);flex:0 0 22px}
+.mapas-galeria{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:22px}
+@media (min-width:768px){.mapas-galeria{grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}}
+.mapa-card{position:relative;display:block;width:100%;padding:0;border:1px solid var(--linha);border-radius:18px;overflow:hidden;background:#060a28;cursor:zoom-in;aspect-ratio:4/3}
+.mapa-card picture,.mapa-card img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.mapa-card:hover img{transform:scale(1.05)}
+#geoprocessamento .mapas-tipos{margin-top:28px}
+
+/* ===== v5: correções de celular ===== */
+.menu-movel{background:#060930}
+.menu-movel .botoes .btn,.cartao .botoes .btn{flex:0 0 auto}
+.migalhas a{display:inline-flex;align-items:center;min-height:44px}
+.rodape .base a{display:inline-flex;align-items:center;min-height:44px}
+.dados a{display:inline-flex;align-items:center;min-height:44px}
+.anos button{min-height:44px}
+#lb-img:not([src]){visibility:hidden}
+.lb-btn{touch-action:manipulation}
+.migalhas a{padding:0 8px;margin:0 -8px}
+.migalhas{align-items:center}
+.migalhas li{display:inline-flex;align-items:center;min-height:44px}

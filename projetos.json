@@ -8,12 +8,12 @@
     "Licenciamento",
     "Flora"
   ],
-  "credito_satelite": "Imagens: Google Earth Pro (Maxar/Airbus)",
+  "credito_satelite": "Imagem de fundo: © Google, Maxar/Airbus",
   "projetos": [
     {
       "id": "planialtimetrico-rede-eletrica",
       "categoria": "Agrimensura e topografia",
-      "titulo": "Levantamento planialtimétrico cadastral – rede de média tensão",
+      "titulo": "Planialtimétrico cadastral de rede de média tensão",
       "periodo": "Empreendimento industrial em Goiás",
       "servico": "topografia-drone",
       "descricao": "Rede elétrica levantada poste a poste com GNSS RTK: cotas, vãos, curvas de nível mestras (5 m) e intermediárias (1 m), planta cadastral e perfil longitudinal do terreno em pranchas A1, sobre MDE e imagem de satélite.",
@@ -54,8 +54,8 @@
     {
       "id": "laudo-prodes-imovel-rural",
       "categoria": "Laudos (ITR, VTN, PRODES)",
-      "titulo": "Laudo PRODES – análise multitemporal de imóvel rural em Goiás",
-      "periodo": "Série histórica 2004–2024",
+      "titulo": "Laudo PRODES com análise multitemporal",
+      "periodo": "Imóvel rural em Goiás · série 2004 a 2024",
       "servico": "laudo-prodes-analise-multitemporal",
       "descricao": "Polígonos de desmatamento do PRODES Cerrado recortados sobre o CAR, classificados um a um por risco com série de imagens desde antes do marco de 22/07/2008. Entrega com laudo, mapas, comparação antes/depois e KML.",
       "imagens": [
@@ -92,7 +92,7 @@
           "largura": 740,
           "altura": 1032,
           "alt": "Imagem em preto e branco de setembro de 2008 com os polígonos numerados.",
-          "legenda": "Set/2008 – antes do marco do Código Florestal.",
+          "legenda": "Set/2008: antes do marco do Código Florestal.",
           "satelite": true
         },
         {
@@ -101,7 +101,7 @@
           "largura": 740,
           "altura": 1032,
           "alt": "Imagem colorida de 2024 com os mesmos polígonos numerados.",
-          "legenda": "2024 – situação atual.",
+          "legenda": "2024: situação atual.",
           "satelite": true
         }
       ]
@@ -109,10 +109,10 @@
     {
       "id": "fauna-campanhas-goias",
       "categoria": "Fauna",
-      "titulo": "Levantamento e monitoramento de fauna – campanhas em Goiás",
+      "titulo": "Levantamento e monitoramento de fauna em Goiás",
       "periodo": "Licenciamento ambiental",
       "servico": "estudos-de-fauna",
-      "descricao": "Campanhas de campo com armadilhas fotográficas, redes de neblina, busca ativa diurna e noturna e biometria, cobrindo mastofauna, quiropterofauna, avifauna e herpetofauna, com relatórios para o órgão licenciador.",
+      "descricao": "Campanhas com armadilhas fotográficas, redes de neblina, busca ativa e biometria, cobrindo mamíferos, morcegos, aves, répteis e anfíbios, com relatório para o órgão licenciador.",
       "imagens": [
         {
           "pasta": "campo",
@@ -153,54 +153,14 @@
           "altura": 888,
           "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva.",
           "legenda": "Mastofauna: biometria de pequeno mamífero."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "fauna-serpente",
-          "largura": 902,
-          "altura": 1440,
-          "alt": "Serpente com padrão em manchas sobre o solo, à noite.",
-          "legenda": "Herpetofauna: busca ativa noturna."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "fauna-perereca",
-          "largura": 960,
-          "altura": 960,
-          "alt": "Perereca verde pousada na ponta do dedo do pesquisador, à noite.",
-          "legenda": "Herpetofauna: anfíbio."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "fauna-macaco-prego",
-          "largura": 1600,
-          "altura": 1200,
-          "alt": "Macaco-prego entre os galhos de uma árvore.",
-          "legenda": "Mastofauna: primata."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "fauna-tucano",
-          "largura": 1600,
-          "altura": 1600,
-          "alt": "Tucano-toco pousado em galho contra o céu.",
-          "legenda": "Avifauna: tucano-toco."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "fauna-ariramba",
-          "largura": 1600,
-          "altura": 996,
-          "alt": "Ave verde e ruiva de bico longo pousada em um galho na mata.",
-          "legenda": "Avifauna: ariramba."
         }
       ]
     },
     {
       "id": "laudo-itr-vtn-goias",
       "categoria": "Laudos (ITR, VTN, PRODES)",
-      "titulo": "Laudo de ITR e VTN – imóvel rural em Goiás",
-      "periodo": "Exercícios 2021–2025",
+      "titulo": "Laudo de ITR e VTN de imóvel rural em Goiás",
+      "periodo": "Exercícios 2021 a 2025",
       "servico": "laudo-itr-vtn",
       "descricao": "Dois laudos em um relatório para responder à malha fiscal do ITR: (1) laudo ambiental com APP, Reserva Legal e vegetação nativa, a partir de imagens de satélite de 2000 a 2026 sobre o perímetro SIGEF e o CAR; (2) laudo de avaliação do Valor da Terra Nua conforme a ABNT NBR 14653-3.",
       "imagens": [
@@ -257,7 +217,7 @@
           "largura": 966,
           "altura": 1100,
           "alt": "Imagem de satélite do imóvel no ano 2000, com perímetro em amarelo e limites de vegetação em verde.",
-          "legenda": "Série histórica – 2000.",
+          "legenda": "Série histórica: 2000.",
           "satelite": true
         },
         {
@@ -265,7 +225,7 @@
           "largura": 966,
           "altura": 1100,
           "alt": "Imagem de satélite do imóvel em 2010, com perímetro em amarelo e limites de vegetação em verde.",
-          "legenda": "Série histórica – 2010.",
+          "legenda": "Série histórica: 2010.",
           "satelite": true
         },
         {
@@ -273,7 +233,7 @@
           "largura": 966,
           "altura": 1100,
           "alt": "Imagem de satélite do imóvel em 2024, com perímetro em amarelo e limites de vegetação em verde.",
-          "legenda": "Série histórica – 2024.",
+          "legenda": "Série histórica: 2024.",
           "satelite": true
         }
       ]
@@ -314,7 +274,7 @@
           "arquivo": "anuncio-regularizacao",
           "largura": 900,
           "altura": 1600,
-          "alt": "Arte de divulgação: Regularização fundiária com responsabilidade – CCIR, ITR, retificação, desmembramento.",
+          "alt": "Arte de divulgação: Regularização fundiária com responsabilidade: CCIR, ITR, retificação, desmembramento.",
           "legenda": "Regularização fundiária"
         },
         {
@@ -323,7 +283,7 @@
           "largura": 900,
           "altura": 1600,
           "alt": "Arte de divulgação: Regularização fundiária, do papel ao georreferenciado, com lista de serviços.",
-          "legenda": "Regularização fundiária – serviços"
+          "legenda": "Regularização fundiária: serviços"
         }
       ]
     }

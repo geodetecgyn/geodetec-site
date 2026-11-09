@@ -1,15 +1,19 @@
 [
   {
     "pergunta": "O que é o CAR?",
-    "resposta": "O Cadastro Ambiental Rural é o registro eletrônico obrigatório de todos os imóveis rurais (Lei 12.651/2012, art. 29). Nele ficam o perímetro do imóvel e o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. É declaratório e depois passa pela análise do órgão ambiental estadual — em Goiás, a SEMAD. Estar inscrito é condição para o crédito agrícola (art. 78-A), mas a inscrição sozinha não regulariza passivos: isso depende da análise e, quando for o caso, do Programa de Regularização Ambiental."
+    "resposta": "O Cadastro Ambiental Rural é o registro eletrônico obrigatório de todos os imóveis rurais (Lei 12.651/2012, art. 29). Nele ficam o perímetro do imóvel e o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. É declaratório e depois passa pela análise do órgão ambiental estadual (SEMAD em Goiás, Naturatins no Tocantins). Estar inscrito é condição para o crédito agrícola (art. 78-A), mas a inscrição sozinha não regulariza passivos: isso depende da análise e, quando for o caso, do Programa de Regularização Ambiental."
   },
   {
     "pergunta": "O que é a DAI?",
-    "resposta": "A Declaração Ambiental do Imóvel foi criada em Goiás pela Lei estadual 21.231/2022. É um formulário eletrônico em que o interessado declara, de forma voluntária, os passivos ambientais do imóvel (por exemplo, atividade sem licença, conversão de uso do solo ou intervenção em área protegida). Pode gerar um Termo de Compromisso Ambiental ou uma Declaração de Inexistência de Passivos e é usada na análise do licenciamento. Informação falsa ou omissa é infração administrativa, por isso recomendamos preparar a DAI com base técnica, como imagens históricas. [[CONFIRMAR regulamentação e plataforma vigentes]]"
+    "resposta": "A Declaração Ambiental do Imóvel foi criada em Goiás pela Lei estadual 21.231/2022. É uma declaração eletrônica, feita no Sistema Ipê da SEMAD-GO, em que o proprietário informa os passivos ambientais do imóvel, como atividade sem licença, abertura de área ou intervenção em área protegida. Ela termina em Termo de Compromisso Ambiental, quando há algo a regularizar, ou em Declaração de Inexistência de Passivos. Como informação falsa ou omissa é infração, recomendamos preparar a DAI com imagens de satélite de várias datas e conferência técnica."
   },
   {
     "pergunta": "Quando o georreferenciamento é obrigatório?",
-    "resposta": "A Lei 6.015/1973 (art. 176, §§ 3º e 4º, incluídos pela Lei 10.267/2001) e o Decreto 4.449/2002 exigem o georreferenciamento certificado pelo INCRA em casos de desmembramento, parcelamento, remembramento e transferência de imóvel rural, observados os prazos do decreto. O Decreto 12.689/2025 unificou o prazo final em 21/10/2029, sem distinção de área. Também é exigido em ações judiciais sobre imóveis rurais. Como cartórios e o INCRA já cobram em várias situações, consulte antes de iniciar uma venda, partilha ou divisão. [[CONFIRMAR prazo vigente — há projeto de lei para nova prorrogação]]"
+    "resposta": "A Lei 6.015/1973 (art. 176, §§ 3º e 4º, incluídos pela Lei 10.267/2001) e o Decreto 4.449/2002 exigem o georreferenciamento certificado pelo INCRA em casos de desmembramento, parcelamento, remembramento e transferência de imóvel rural, observados os prazos do decreto. O Decreto 12.689/2025 unificou o prazo final em 21/10/2029, sem distinção de área. Também é exigido em ações judiciais sobre imóveis rurais. Como cartórios e o INCRA já cobram em várias situações, consulte antes de iniciar uma venda, partilha ou divisão. Como há propostas de nova prorrogação, confirme o prazo no cartório antes de agendar a venda."
+  },
+  {
+    "pergunta": "Quais imagens de satélite vocês usam?",
+    "resposta": "Depende da pergunta que o mapa precisa responder. Para séries longas usamos Landsat, que tem imagens desde 1984. Para acompanhar mudanças recentes com mais detalhe, Sentinel-2 (10 m) e CBERS-4A (até 2 m). Para enxergar cercas, estradas e árvores isoladas, imagens comerciais de alta resolução e, quando precisa de centímetros, voo de drone. Cruzamos tudo com bases oficiais como PRODES, MapBiomas, SICAR e SIGEF e entregamos em SHP, KML, GeoTIFF e PDF."
   },
   {
     "pergunta": "Recebi intimação do ITR. O que fazer?",
@@ -17,11 +21,11 @@
   },
   {
     "pergunta": "Quanto tempo leva um licenciamento ambiental?",
-    "resposta": "Depende da atividade, do porte, da modalidade e de o processo chegar completo ao órgão. Como referência, a Resolução CONAMA 237/1997 (art. 14) fixa até 6 meses para cada licença e até 12 meses quando há EIA/RIMA ou audiência pública, sem contar o tempo de resposta às pendências. Em Goiás valem os prazos da Lei 20.694/2019 e de seus regulamentos [[CONFIRMAR prazos atuais]]. Estudos de fauna costumam exigir campanhas na seca e na chuva, o que também pesa no cronograma."
+    "resposta": "Depende da atividade, do porte, da modalidade e de o processo chegar completo ao órgão. Como referência, a Resolução CONAMA 237/1997 (art. 14) fixa até 6 meses para cada licença e até 12 meses quando há EIA/RIMA ou audiência pública, sem contar o tempo de resposta às pendências. Em Goiás valem os prazos da Lei 20.694/2019 e de seus regulamentos. Estudos de fauna costumam exigir campanhas na seca e na chuva, o que também pesa no cronograma."
   },
   {
     "pergunta": "Quando é preciso investigar contaminação do solo e da água subterrânea?",
-    "resposta": "Quando há atividade com potencial de contaminação — posto, oficina, indústria, armazenamento de produtos químicos ou combustíveis — e existe indício (vazamento, odor, mancha, histórico de uso) ou exigência do órgão ambiental, ou ainda na venda, desativação ou mudança de uso da área. O caminho segue a Resolução CONAMA 420/2009: avaliação preliminar, investigação confirmatória e, se confirmada a contaminação, investigação detalhada, avaliação de risco e intervenção. Entender o fluxo da água subterrânea (estudo hidrogeológico) é o que define onde instalar os poços de monitoramento."
+    "resposta": "Quando há atividade com potencial de contaminação (posto, oficina, indústria, armazenamento de produtos químicos ou combustíveis) e existe indício (vazamento, odor, mancha, histórico de uso) ou exigência do órgão ambiental, ou ainda na venda, desativação ou mudança de uso da área. O caminho segue a Resolução CONAMA 420/2009: avaliação preliminar, investigação confirmatória e, se confirmada a contaminação, investigação detalhada, avaliação de risco e intervenção. Entender o fluxo da água subterrânea (estudo hidrogeológico) é o que define onde instalar os poços de monitoramento."
   },
   {
     "pergunta": "Para que serve o CCIR?",
@@ -29,6 +33,6 @@
   },
   {
     "pergunta": "Vocês atendem engenheiros, consultorias e escritórios?",
-    "resposta": "Sim. Atuamos como parceiro técnico de engenheiros, consultorias ambientais, escritórios de projeto, imobiliárias rurais e escritórios de advocacia — no campo, no geoprocessamento ou na elaboração completa de peças técnicas com ART."
+    "resposta": "Sim. Atuamos como parceiro técnico de engenheiros, consultorias ambientais, escritórios de projeto, imobiliárias rurais e escritórios de advocacia, no campo, no geoprocessamento ou na elaboração completa de peças técnicas com ART."
   }
 ]

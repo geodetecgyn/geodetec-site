@@ -235,7 +235,16 @@
   }
   if (lb) {
     lb.addEventListener('close', () => { document.body.classList.remove('lb-aberto'); lbOrigem?.focus(); });
+    // no toque, age no pointerup (alguns navegadores não geram "click" logo depois de um deslizar)
+    let ultimoToque = 0;
+    const acaoLb = a => { if (a === 'fechar') lbFechar(); else if (a === 'ant') lbMostrar(lbI - 1, -1); else if (a === 'prox') lbMostrar(lbI + 1, 1); };
+    lb.addEventListener('pointerup', e => {
+      if (e.pointerType === 'mouse') return;
+      const a = e.target.closest('[data-lb]')?.dataset.lb; if (!a) return;
+      ultimoToque = Date.now(); e.preventDefault(); acaoLb(a);
+    });
     lb.addEventListener('click', e => {
+      if (Date.now() - ultimoToque < 600) return;
       const a = e.target.closest('[data-lb]')?.dataset.lb;
       if (a === 'fechar') lbFechar(); else if (a === 'ant') lbMostrar(lbI - 1, -1); else if (a === 'prox') lbMostrar(lbI + 1, 1);
       else if (e.target === lb || e.target.id === 'lb-palco') lbFechar();
@@ -349,14 +358,16 @@
       if (/wa\.me\/\d+|api\.whatsapp\.com\/send/.test(pronto) && texto) return pronto + (pronto.includes('?') ? '&' : '?') + 'text=' + t;
       return pronto;
     }
-    const num = String(c.whatsapp || '').replace(/[^\d]/g, '') || c.whatsapp;
+    const num = String(c.whatsapp || '').replace(/[^\d]/g, '');
+    // sem número cadastrado ainda: usa o e-mail para o botão nunca ficar quebrado
+    if (num.length < 10) return `mailto:${vazio(c.email) ? '' : c.email}?subject=${encodeURIComponent('Contato pelo site GeoDetec')}&body=${t}`;
     return `https://wa.me/${num}?text=${t}`;
   }
   async function contato() {
     try { CT = await json('contato'); } catch { return; }
     $$('[data-wa]').forEach(a => {
       const tipo = a.dataset.wa, msg = (MSGS[tipo] || MSGS.orcamento)(CT, a);
-      a.href = linkWa(CT, msg); a.target = '_blank'; a.rel = 'noopener';
+      a.href = linkWa(CT, msg); if (a.href.startsWith('http')) { a.target = '_blank'; a.rel = 'noopener'; } else a.removeAttribute('target');
     });
     $$('[data-ct]').forEach(el => {
       const k = el.dataset.ct, v = CT[k]; if (v === undefined) return;
@@ -364,6 +375,8 @@
       else if (k === 'instagram') { const u = String(v).replace(/^@/, ''); el.textContent = vazio(v) ? v : '@' + u; if (!vazio(v)) el.href = `https://www.instagram.com/${u}/`; else el.removeAttribute('href'); }
       else el.textContent = v;
     });
+    // Instagram ainda não definido: esconde as linhas em vez de mostrar o marcador
+    if (vazio(CT.instagram)) $$('[data-ct="instagram"],[data-ct="instagram-link"]').forEach(el => (el.closest('li') || el).setAttribute('hidden', ''));
     $$('[data-ct="instagram-link"]').forEach(el => {
       if (!vazio(CT.instagram)) { el.href = `https://www.instagram.com/${String(CT.instagram).replace(/^@/, '')}/`; el.target = '_blank'; el.rel = 'noopener'; }
     });
@@ -393,7 +406,7 @@
     if (!CT) await contato();
     const txt = [`Olá, Breno! Vim pelo site da GeoDetec.`, `Nome: ${f.nome.value.trim()}`, `Município: ${f.municipio.value.trim()}`,
       f.servico.value && `Serviço: ${f.servico.value}`, f.mensagem.value.trim() && `Mensagem: ${f.mensagem.value.trim()}`].filter(Boolean).join('\n');
-    window.open(linkWa(CT || {}, txt), '_blank', 'noopener');
+    const destino = linkWa(CT || {}, txt); if (destino.startsWith('mailto:')) location.href = destino; else window.open(destino, '_blank', 'noopener');
   });
 
   /* ---------- Início ---------- */

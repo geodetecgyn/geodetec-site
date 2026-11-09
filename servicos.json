@@ -8,9 +8,9 @@
     },
     {
       "id": "geo",
-      "titulo": "Geotecnologia, drone e laudos",
+      "titulo": "Geoprocessamento, drone e laudos",
       "curto": "Geo e laudos",
-      "resumo": "Drone, GNSS, satélite e laudos com ART."
+      "resumo": "Imagens de satélite, drone, GNSS e laudos com ART."
     },
     {
       "id": "ambiental",
@@ -28,7 +28,7 @@
       "id": "biota",
       "titulo": "Fauna e flora",
       "curto": "Fauna e flora",
-      "resumo": "Equipe de biólogos e engenheiros em campo."
+      "resumo": "Biólogos e engenheiros em campo."
     }
   ],
   "servicos": [
@@ -42,7 +42,7 @@
       "o_que_e": "É a medição dos vértices que definem o perímetro do imóvel rural, com coordenadas no sistema SIRGAS 2000 e precisão exigida pela Norma Técnica para Georreferenciamento de Imóveis Rurais do INCRA. Os dados são enviados ao SIGEF, que verifica sobreposições com imóveis vizinhos já certificados e emite a certificação, usada depois no registro da matrícula.",
       "quando_exigido": [
         "Desmembramento, parcelamento ou remembramento do imóvel rural.",
-        "Transferência do imóvel (venda, doação, partilha), conforme os prazos do Decreto 4.449/2002, alterados pelo Decreto 12.689/2025. [[CONFIRMAR prazo vigente — há projeto de lei para estender]]",
+        "Transferência do imóvel (venda, doação, partilha), conforme os prazos do Decreto 4.449/2002, alterados pelo Decreto 12.689/2025.",
         "Ações judiciais que envolvam imóvel rural (Lei 6.015/1973, art. 225, § 3º).",
         "Retificação de área ou divergência entre a matrícula e a realidade de campo.",
         "Cercas, obras ou divergência de divisa com confrontante."
@@ -65,8 +65,8 @@
       "normas": [
         "Lei 6.015/1973, art. 176, §§ 3º a 5º (incluídos pela Lei 10.267/2001)",
         "Decreto 4.449/2002 e Decreto 12.689/2025",
-        "Norma Técnica para Georreferenciamento de Imóveis Rurais – INCRA (3ª ed.)",
-        "ABNT NBR 13133 – Execução de levantamento topográfico"
+        "Norma Técnica para Georreferenciamento de Imóveis Rurais: INCRA (3ª ed.)",
+        "ABNT NBR 13133: Execução de levantamento topográfico"
       ]
     },
     {
@@ -76,7 +76,7 @@
       "titulo": "Reserva Legal e APP: mapeamento, demarcação e averbação",
       "titulo_curto": "Reserva Legal e APP",
       "resumo": "Nascentes, cursos d'água e topos de morro mapeados; APP determinada e locada; Reserva Legal demarcada no campo e averbada.",
-      "o_que_e": "Levamos o Código Florestal para o terreno. Mapeamos nascentes, cursos d'água e topos de morro, determinamos as faixas de APP e as locamos em campo. Na Reserva Legal, fazemos a demarcação física (marcos, cercas) e a parte jurídica: planta, memorial e averbação na matrícula, quando exigida ou desejada.",
+      "o_que_e": "Mapeamos nascentes, cursos d'água e topos de morro, calculamos as faixas de APP e marcamos tudo no campo. Na Reserva Legal fazemos a demarcação física (marcos e cercas) e a parte documental: planta, memorial e averbação na matrícula, quando exigida ou quando o proprietário quiser.",
       "quando_exigido": [
         "Inscrição ou retificação do CAR e adesão ao PRA.",
         "Cercamento e isolamento de nascentes e APP.",
@@ -137,7 +137,7 @@
       "titulo": "Regularização fundiária: CCIR, ITR, REURB, retificação e desmembramento",
       "titulo_curto": "Regularização fundiária",
       "resumo": "CCIR e ITR em dia, REURB, retificação de área, desmembramento, remembramento e peças para usucapião.",
-      "o_que_e": "Matrícula, CCIR, ITR e CAR precisam contar a mesma história. Corrigimos áreas e confrontações, dividimos ou unimos imóveis e preparamos plantas e memoriais para cartório, INCRA e Receita — junto com o advogado ou a imobiliária do cliente.",
+      "o_que_e": "Matrícula, CCIR, ITR e CAR precisam bater entre si. Corrigimos áreas e confrontações, dividimos ou unimos imóveis e fazemos as plantas e os memoriais para cartório, INCRA e Receita, junto com o advogado ou a imobiliária do cliente.",
       "quando_exigido": [
         "Área ou confrontações da matrícula diferentes do campo (Lei 6.015/1973, arts. 212 e 213).",
         "Venda de parte, partilha, doação ou unificação de matrículas, respeitando a fração mínima de parcelamento.",
@@ -200,10 +200,10 @@
       "slug": "car-cadastro-ambiental-rural",
       "grupo": "ambiental",
       "icone": "folha",
-      "titulo": "CAR – Cadastro Ambiental Rural (Goiás e Tocantins)",
+      "titulo": "CAR (Cadastro Ambiental Rural) em Goiás e no Tocantins",
       "titulo_curto": "CAR (GO e TO)",
       "resumo": "Em todo Goiás e CAR completo no Tocantins (Naturatins): inscrição, retificação, análise e resposta a pendências.",
-      "o_que_e": "O CAR é o registro eletrônico obrigatório de todos os imóveis rurais, com o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. Ele é declaratório: um CAR mal feito gera pendências na análise do órgão estadual, problemas no ITR e travas no crédito rural. Atendemos todo o estado de Goiás, com a SEMAD, e fazemos o CAR completo no Tocantins — do levantamento à análise —, com protocolo e acompanhamento direto no Naturatins.",
+      "o_que_e": "O CAR é o registro eletrônico obrigatório de todos os imóveis rurais, com o mapa de APP, Reserva Legal, vegetação nativa e áreas consolidadas. Ele é declaratório: um CAR mal feito gera pendências na análise do órgão estadual, problemas no ITR e travas no crédito rural. Atendemos todo o estado de Goiás, com a SEMAD, e fazemos o CAR completo no Tocantins, do levantamento à análise , , com protocolo e acompanhamento direto no Naturatins.",
       "quando_exigido": [
         "Obrigatório para todo imóvel rural (Lei 12.651/2012, art. 29).",
         "Condição para crédito agrícola (Lei 12.651/2012, art. 78-A).",
@@ -232,10 +232,10 @@
       "slug": "dai-declaracao-ambiental-do-imovel",
       "grupo": "ambiental",
       "icone": "doc-folha",
-      "titulo": "DAI – Declaração Ambiental do Imóvel",
+      "titulo": "DAI: Declaração Ambiental do Imóvel",
       "titulo_curto": "DAI",
-      "resumo": "Declaração dos passivos ambientais do imóvel no Sistema Ipê (SEMAD-GO), com base técnica e imagens históricas — gera TCA ou Declaração de Inexistência de Passivos.",
-      "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é a declaração eletrônica que reúne as intervenções e os passivos ambientais do imóvel rural — atividade sem licença, conversão de uso do solo, supressão ou intervenção em área protegida. É feita no Portal Ambiental da SEMAD-GO (Sistema Ipê), a partir do imóvel já cadastrado, e resulta em Termo de Compromisso Ambiental (TCA), quando há passivo a regularizar, ou em Declaração de Inexistência de Passivos. Como informação falsa ou omissa é infração, a declaração precisa de base técnica: análise multitemporal de imagens de satélite e conferência de campo.",
+      "resumo": "Declaração dos passivos ambientais do imóvel no Sistema Ipê (SEMAD-GO), feita com imagens históricas e análise técnica. O resultado é um TCA ou a Declaração de Inexistência de Passivos.",
+      "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é a declaração eletrônica que reúne as intervenções e os passivos ambientais do imóvel rural, como atividade sem licença, conversão de uso do solo, supressão ou intervenção em área protegida. É feita no Portal Ambiental da SEMAD-GO (Sistema Ipê), a partir do imóvel já cadastrado, e resulta em Termo de Compromisso Ambiental (TCA), quando há passivo a regularizar, ou em Declaração de Inexistência de Passivos. Como informação falsa ou omissa é infração, a declaração precisa de base técnica: análise multitemporal de imagens de satélite e conferência de campo.",
       "quando_exigido": [
         "Regularização de passivos ambientais do imóvel em Goiás.",
         "Licenciamento de atividades no imóvel, quando o órgão pede a situação de passivos.",
@@ -258,7 +258,7 @@
       "normas": [
         "Lei estadual (GO) 21.231/2022",
         "Lei 12.651/2012 (Código Florestal)",
-        "Sistema Ipê – Portal Ambiental da SEMAD-GO"
+        "Sistema Ipê: Portal Ambiental da SEMAD-GO"
       ]
     },
     {
@@ -290,7 +290,7 @@
         "Lei Complementar 140/2011",
         "Resolução CONAMA 237/1997",
         "Lei estadual (GO) 20.694/2019",
-        "Lei 15.190/2025 – Lei Geral do Licenciamento [[CONFIRMAR vigência e vetos]]"
+        "Lei 15.190/2025 (Lei Geral do Licenciamento Ambiental)"
       ]
     },
     {
@@ -348,7 +348,7 @@
         "Origem da água (rede, poço ou cisterna)."
       ],
       "normas": [
-        "ABNT NBR 17076:2024 – Sistemas de tratamento de esgoto de menor porte [[CONFIRMAR]]",
+        "ABNT NBR 17076:2024: Sistemas de tratamento de esgoto de menor porte",
         "Lei 6.766/1979, quando for loteamento",
         "Exigências do órgão licenciador e do município"
       ]
@@ -422,7 +422,7 @@
       "titulo": "IBAMA: CTF/APP, RAPP e TCFA",
       "titulo_curto": "IBAMA (CTF e RAPP)",
       "resumo": "Inscrição e regularização no Cadastro Técnico Federal, relatório anual (RAPP) e orientação sobre a TCFA.",
-      "o_que_e": "Atividades potencialmente poluidoras precisam estar no Cadastro Técnico Federal do IBAMA e entregar o RAPP todo ano. Fazemos a inscrição no enquadramento certo, mantemos o cadastro em dia e preparamos o relatório — evitando multa e travas na emissão de certificados.",
+      "o_que_e": "Atividades potencialmente poluidoras precisam estar no Cadastro Técnico Federal do IBAMA e entregar o RAPP todo ano. Fazemos a inscrição no enquadramento certo, mantemos o cadastro em dia e preparamos o relatório, evitando multa e travas na emissão de certificados.",
       "quando_exigido": [
         "Atividades listadas no Anexo VIII da Lei 6.938/1981 (CTF/APP).",
         "Entrega anual do RAPP, até 31 de março.",
@@ -548,7 +548,7 @@
       "titulo": "Auditorias e vistorias ambientais",
       "titulo_curto": "Auditorias e vistorias",
       "resumo": "Vistorias de conformidade em mineração, agro e indústria, com não conformidades por risco e plano de ação.",
-      "o_que_e": "Vamos a campo verificar estruturas e rotinas — tanques, bacias de contenção, caixas separadoras, oficinas, lavadores, resíduos e efluentes — contra as licenças e as normas. Entregamos as não conformidades classificadas por risco e um plano de ação objetivo.",
+      "o_que_e": "Vamos a campo verificar estruturas e rotinas (tanques, bacias de contenção, caixas separadoras, oficinas, lavadores, resíduos e efluentes) contra as licenças e as normas. Entregamos as não conformidades classificadas por risco e um plano de ação objetivo.",
       "quando_exigido": [
         "Condicionantes de licença e auditorias periódicas.",
         "Antes de renovar licença ou depois de uma fiscalização.",
@@ -577,8 +577,8 @@
       "icone": "pegada",
       "titulo": "Estudos de fauna",
       "titulo_curto": "Estudos de fauna",
-      "resumo": "Levantamento, diagnóstico e monitoramento de fauna por equipe própria de biólogos, do campo ao relatório.",
-      "o_que_e": "Nossa equipe de biólogos faz as campanhas de campo, identifica as espécies, avalia o status de conservação e escreve os relatórios para o licenciamento — com dados primários (campo) e secundários (literatura e bases oficiais). Quando o projeto pede, somamos especialistas parceiros.",
+      "resumo": "Levantamento, diagnóstico e monitoramento de fauna feitos pela nossa equipe de biólogos, com relatório para o órgão ambiental.",
+      "o_que_e": "Nossos biólogos fazem as campanhas de campo, identificam as espécies, avaliam o status de conservação e escrevem os relatórios do licenciamento. Usamos dados de campo e dados secundários (literatura e bases oficiais). Quando o projeto pede, trazemos especialistas parceiros.",
       "grupos_fauna": [
         "Mastofauna (mamíferos terrestres)",
         "Quiropterofauna (morcegos)",
@@ -645,27 +645,15 @@
           "largura": 1600
         },
         {
-          "arquivo": "fauna-roedor-biometria-960.jpg",
-          "legenda": "Biometria de pequeno mamífero",
-          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva.",
-          "largura": 1600
-        },
-        {
           "arquivo": "fauna-ave-rede-neblina-960.jpg",
           "legenda": "Ave em rede de neblina",
           "alt": "Ave de bico vermelho e peito pintado, segura na mão após captura em rede de neblina.",
           "largura": 960
         },
         {
-          "arquivo": "fauna-serpente-960.jpg",
-          "legenda": "Herpetofauna – busca ativa",
-          "alt": "Serpente com padrão em manchas sobre o solo, à noite.",
-          "largura": 902
-        },
-        {
-          "arquivo": "fauna-tucano-960.jpg",
-          "legenda": "Avifauna",
-          "alt": "Tucano-toco pousado em galho contra o céu.",
+          "arquivo": "fauna-roedor-biometria-960.jpg",
+          "legenda": "Biometria de pequeno mamífero",
+          "alt": "Pequeno roedor sendo medido com paquímetro, seguro por mão com luva.",
           "largura": 1600
         }
       ],
@@ -683,7 +671,7 @@
       "titulo": "Estudos de flora",
       "titulo_curto": "Estudos de flora",
       "resumo": "Inventário florestal, levantamento de vegetação nativa, laudos para corte de árvores isoladas e resgate de flora.",
-      "o_que_e": "Estudos que caracterizam a vegetação de uma área — composição de espécies, volume, espécies protegidas ou ameaçadas — para embasar pedidos de supressão, laudos de vegetação e programas de resgate.",
+      "o_que_e": "Estudos que caracterizam a vegetação de uma área (composição de espécies, volume, espécies protegidas ou ameaçadas) para embasar pedidos de supressão, laudos de vegetação e programas de resgate.",
       "quando_exigido": [
         "Pedido de supressão de vegetação nativa (Lei 12.651/2012, art. 26).",
         "Corte de árvores isoladas.",
@@ -768,7 +756,7 @@
       ],
       "normas": [
         "Lei 9.393/1996, arts. 10 e 14",
-        "ABNT NBR 14653-3 – Avaliação de imóveis rurais",
+        "ABNT NBR 14653-3: Avaliação de imóveis rurais",
         "Lei 12.651/2012 (Código Florestal)"
       ]
     },
@@ -779,7 +767,7 @@
       "titulo": "Laudo PRODES e análise multitemporal",
       "titulo_curto": "Laudo PRODES",
       "resumo": "Série histórica de imagens de satélite para verificar polígonos de desmatamento e áreas consolidadas antes de 22/07/2008.",
-      "o_que_e": "Quando um polígono do PRODES trava a venda ou o crédito, é preciso mostrar o que de fato aconteceu na área. Montamos a série temporal (Landsat, Sentinel, CBERS e imagens de alta resolução), classificamos cada polígono e entregamos laudo, mapas e KML. O laudo mostra o que as imagens mostram: se houve supressão depois de 2008 sem autorização, indicamos o caminho de regularização.",
+      "o_que_e": "Quando um polígono do PRODES trava a venda ou o crédito, é preciso mostrar o que de fato aconteceu na área. Montamos a série temporal (Landsat, Sentinel, CBERS e imagens de alta resolução), classificamos cada polígono e entregamos laudo, mapas e KML. O laudo é fiel às imagens: se houve supressão depois de 2008 sem autorização, indicamos o caminho de regularização.",
       "quando_exigido": [
         "Bloqueio em protocolos socioambientais de compra de gado ou grãos.",
         "Comprovação de área rural consolidada (Lei 12.651/2012, art. 3º, IV).",
@@ -800,7 +788,7 @@
       ],
       "normas": [
         "Lei 12.651/2012, art. 3º, IV (marco de 22/07/2008)",
-        "PRODES Cerrado – INPE",
+        "PRODES Cerrado: INPE",
         "Guia técnico exigido pelo comprador"
       ]
     },
@@ -829,7 +817,7 @@
         "Projetos existentes, se houver."
       ],
       "normas": [
-        "ABNT NBR 13133 – Execução de levantamento topográfico",
+        "ABNT NBR 13133: Execução de levantamento topográfico",
         "RBAC-E nº 94 (ANAC) e ICA 100-40 (DECEA) para operação de drones"
       ]
     },
@@ -837,21 +825,22 @@
       "slug": "mapas-tematicos-geoprocessamento",
       "grupo": "geo",
       "icone": "camadas",
-      "titulo": "Mapas temáticos e geoprocessamento",
-      "titulo_curto": "Mapas e geoprocessamento",
-      "resumo": "Uso do solo, APP, Reserva Legal, série histórica e plantas para EIA/RIMA, PRAD e PCA.",
-      "o_que_e": "Transformamos dados de campo, imagens de satélite e bases oficiais (SIGEF, SICAR, IBGE) em mapas que respondem perguntas concretas: onde está a APP, quanto de vegetação nativa existia em 2008, o que mudou entre 2000 e hoje.",
+      "titulo": "Geoprocessamento, imagens de satélite e mapas temáticos",
+      "titulo_curto": "Geoprocessamento e mapas",
+      "resumo": "Séries históricas com Landsat, Sentinel-2 e CBERS, uso do solo, APP, Reserva Legal e plantas para EIA/RIMA, PRAD e PCA.",
+      "o_que_e": "Baixamos e processamos imagens de satélite (Landsat desde 1984, Sentinel-2, CBERS-4A, alta resolução e drone) e cruzamos com bases oficiais como SIGEF, SICAR, PRODES, MapBiomas e IBGE. Com isso montamos séries históricas, classificamos o uso do solo e mostramos o que existia em cada data, em mapas prontos para o órgão ambiental, o cartório ou o laudo.",
       "quando_exigido": [
         "Instrução de CAR, DAI, licenciamento e laudos de ITR.",
         "Comprovação de área consolidada ou de vegetação remanescente.",
         "Planejamento de uso do solo e de compensação ambiental."
       ],
       "entregaveis": [
-        "Mapas de uso e cobertura do solo.",
-        "Delimitação de APP e Reserva Legal.",
-        "Série histórica e mapa de estabilidade da vegetação.",
+        "Séries históricas e comparação antes e depois por data.",
+        "Mapas de uso e cobertura do solo, APP e Reserva Legal.",
+        "Índices de vegetação (NDVI) e mapa de estabilidade da vegetação.",
+        "Georreferenciamento de imagens e plantas antigas.",
         "Plantas e memoriais para EIA/RIMA, PRAD e PCA.",
-        "Arquivos SHP, KML e PDF em SIRGAS 2000."
+        "Arquivos em SHP, KML, GeoTIFF e PDF, em SIRGAS 2000."
       ],
       "documentos": [
         "Limites do imóvel (SIGEF, CAR, KML ou planta).",
@@ -859,7 +848,8 @@
       ],
       "normas": [
         "Lei 12.651/2012, arts. 4º e 12 (APP e Reserva Legal)",
-        "SIRGAS 2000 – referencial geodésico oficial (IBGE)"
+        "SIRGAS 2000, referencial geodésico oficial (IBGE)",
+        "Bases oficiais: INPE (PRODES), SICAR, SIGEF e MapBiomas"
       ]
     }
   ]

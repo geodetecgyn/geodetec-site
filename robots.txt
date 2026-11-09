@@ -3,4 +3,4 @@ Allow: /
 Disallow: /tools/
 Disallow: /_template.html
 
-Sitemap: https://[[DOMINIO]]/sitemap.xml
+Sitemap: https://geodetecgyn.github.io/geodetec-site/sitemap.xml
