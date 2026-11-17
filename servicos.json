@@ -234,7 +234,7 @@
       "icone": "doc-folha",
       "titulo": "DAI: Declaração Ambiental do Imóvel",
       "titulo_curto": "DAI",
-      "resumo": "Declaração dos passivos ambientais do imóvel no Sistema Ipê (SEMAD-GO), feita com imagens históricas e análise técnica. O resultado é um TCA ou a Declaração de Inexistência de Passivos.",
+      "resumo": "Declaração de passivos ambientais do imóvel no Sistema Ipê (SEMAD-GO), com imagens históricas. Resulta em TCA ou em Declaração de Inexistência de Passivos.",
       "o_que_e": "A DAI, criada pela Lei estadual 21.231/2022, é a declaração eletrônica que reúne as intervenções e os passivos ambientais do imóvel rural, como atividade sem licença, conversão de uso do solo, supressão ou intervenção em área protegida. É feita no Portal Ambiental da SEMAD-GO (Sistema Ipê), a partir do imóvel já cadastrado, e resulta em Termo de Compromisso Ambiental (TCA), quando há passivo a regularizar, ou em Declaração de Inexistência de Passivos. Como informação falsa ou omissa é infração, a declaração precisa de base técnica: análise multitemporal de imagens de satélite e conferência de campo.",
       "quando_exigido": [
         "Regularização de passivos ambientais do imóvel em Goiás.",
@@ -291,6 +291,82 @@
         "Resolução CONAMA 237/1997",
         "Lei estadual (GO) 20.694/2019",
         "Lei 15.190/2025 (Lei Geral do Licenciamento Ambiental)"
+      ]
+    },
+    {
+      "slug": "licenciamento-ambiental-rural",
+      "grupo": "ambiental",
+      "icone": "broto",
+      "titulo": "Licenciamento ambiental rural: pecuária, agricultura irrigada e de sequeiro",
+      "titulo_curto": "Licenciamento rural",
+      "resumo": "Licença, dispensa ou regularização da atividade agropecuária na SEMAD-GO, junto com CAR, outorga e passivos do imóvel.",
+      "o_que_e": "Na SEMAD-GO, o licenciamento de agricultura e pecuária é feito pela gerência de atividades agropecuárias (Gesol), pelo Sistema Ipê. O que define se a atividade precisa de licença, de licença simplificada ou se é dispensada é o tipo de atividade, o porte e a localização. Fazemos esse enquadramento, reunimos o que o órgão pede e cuidamos para que CAR, outorga, Reserva Legal e passivos estejam em ordem, porque é isso que costuma travar o processo.",
+      "tipos": [
+        {
+          "id": "pecuaria",
+          "titulo": "Pecuária",
+          "imagem": "foto-pecuaria-nelore-960.jpg",
+          "texto": "Cria, recria e engorda a pasto, semiconfinamento e confinamento. Enquadramento pelo rebanho e pela área, bebedouros e barragens, manejo de dejetos quando há confinamento, e APP cercada.",
+          "alt": "Gado Nelore em pastagem em Campos Belos, Goiás",
+          "credito": {
+            "autor": "Carlos Ebert",
+            "licenca": "CC BY 2.0",
+            "licenca_url": "https://creativecommons.org/licenses/by/2.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Nelore_cattle_-_12704276665.jpg"
+          }
+        },
+        {
+          "id": "irrigada",
+          "titulo": "Agricultura irrigada",
+          "imagem": "foto-pivos-satelite-960.jpg",
+          "texto": "Pivô central e outros sistemas. O licenciamento anda junto com a outorga: área irrigada, captação ou barragem, e plano de uso e conservação do solo.",
+          "alt": "Imagem de satélite de lavouras irrigadas por pivôs centrais ao longo de um rio",
+          "credito": {
+            "autor": "Axelspace Corporation",
+            "licenca": "CC BY-SA 4.0",
+            "licenca_url": "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Bahia,_Brazil.jpg"
+          }
+        },
+        {
+          "id": "sequeiro",
+          "titulo": "Agricultura de sequeiro",
+          "imagem": "foto-soja-sequeiro-960.jpg",
+          "texto": "Lavouras que dependem só da chuva, como soja, milho e sorgo. Enquadramento pelo porte, terraços e conservação do solo, e conferência de que a área aberta é consolidada ou tem autorização.",
+          "alt": "Lavoura de soja de sequeiro em Alto Paraíso de Goiás",
+          "credito": {
+            "autor": "Marcelo Camargo/Agência Brasil",
+            "licenca": "CC BY 3.0 BR",
+            "licenca_url": "https://creativecommons.org/licenses/by/3.0/br/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Chapada_dos_Veadeiros_08.jpg"
+          }
+        }
+      ],
+      "quando_exigido": [
+        "Implantação ou ampliação da atividade agropecuária, conforme porte e localização.",
+        "Abertura de área nova, que exige autorização de supressão antes de plantar.",
+        "Exigência de banco, comprador de grãos ou frigorífico.",
+        "Notificação ou fiscalização da SEMAD.",
+        "Mesmo quando a atividade é dispensada, o imóvel precisa estar com o CAR e a outorga em dia."
+      ],
+      "entregaveis": [
+        "Enquadramento da atividade (licença, licença simplificada ou dispensa).",
+        "Mapa de uso do solo do imóvel com áreas produtivas, APP e Reserva Legal.",
+        "Estudos e documentos pedidos pelo órgão, com ART.",
+        "Protocolo e acompanhamento no Sistema Ipê.",
+        "Outorga, CAR e DAI integrados ao mesmo processo, quando necessários."
+      ],
+      "documentos": [
+        "Matrícula e recibo do CAR.",
+        "Área de cada atividade (lavoura, pasto, irrigação) e tamanho do rebanho.",
+        "Outorgas e licenças anteriores, se houver.",
+        "Limites do imóvel (SIGEF, KML ou SHP)."
+      ],
+      "normas": [
+        "Lei estadual (GO) 20.694/2019 e Decreto 9.710/2020 (licenciamento em Goiás)",
+        "Lei 12.651/2012 (Código Florestal)",
+        "Lei 15.190/2025 (Lei Geral do Licenciamento Ambiental)",
+        "IN SEMAD 19/2026 (licenciamento e barragens em empreendimentos agropecuários)"
       ]
     },
     {
@@ -357,31 +433,89 @@
       "slug": "outorgas-recursos-hidricos",
       "grupo": "ambiental",
       "icone": "gota",
-      "titulo": "Outorgas e recursos hídricos",
-      "titulo_curto": "Outorgas",
-      "resumo": "Pedidos de outorga e dispensa para poços, captações superficiais, barramentos e lançamentos.",
-      "o_que_e": "Quem capta água, perfura poço, constrói barramento ou lança efluente em corpo hídrico precisa de outorga (ou de dispensa, nos usos insignificantes). Preparamos os estudos hidrológicos e o pedido no órgão estadual ou na ANA, conforme o domínio do curso d'água.",
+      "titulo": "Outorga de uso da água: indústria, irrigação, barramento e captação direta",
+      "titulo_curto": "Outorgas de água",
+      "resumo": "Outorga e registro de uso insignificante para indústria, irrigação, barramento, captação direta em rio e poço, no Sistema Veredas (SEMAD-GO) ou na ANA.",
+      "o_que_e": "Quem capta água de rio ou poço, constrói barragem ou lança efluente precisa de autorização para usar a água. Em rio estadual, o pedido é feito na SEMAD-GO pelo Sistema Veredas; em rio federal, na ANA. Calculamos a demanda, verificamos a disponibilidade da bacia, preparamos mapas e memoriais e acompanhamos o processo até a portaria. Quando o uso é pequeno, fazemos o registro de uso insignificante, que é gratuito e mais simples.",
       "quando_exigido": [
-        "Captação superficial ou subterrânea (poço).",
-        "Barramentos e reservatórios.",
-        "Lançamento de efluentes.",
-        "Exigência no licenciamento da atividade."
+        "Captação em rio, córrego, nascente ou poço acima do limite de uso insignificante.",
+        "Barragens e represas, inclusive para irrigação e bebedouro do gado.",
+        "Lançamento de efluente em curso d'água.",
+        "Licenciamento ambiental da atividade, que costuma pedir a outorga ou o registro.",
+        "Usos insignificantes, segundo a SEMAD-GO: captação de até 1 L/s, barragem com até 12.000 m² de área alagada e poço rural de até 1 L/s por até 14 horas por dia. Esses usos também precisam ser registrados."
       ],
       "entregaveis": [
-        "Estudo de disponibilidade hídrica e demanda.",
-        "Pedido de outorga ou de dispensa.",
-        "Mapas de localização das interferências.",
-        "Acompanhamento até a decisão."
+        "Cálculo da demanda de água por mês e por ponto de uso.",
+        "Estudo de disponibilidade hídrica da bacia.",
+        "Mapas, plantas e memoriais dos pontos de captação, barramento e lançamento.",
+        "Pedido de outorga ou registro de uso insignificante no Sistema Veredas ou na ANA.",
+        "Acompanhamento até a portaria e controle das condicionantes."
       ],
       "documentos": [
         "Matrícula e recibo do CAR.",
-        "Localização dos pontos de uso.",
-        "Dados do poço ou da bomba, se já existirem."
+        "Localização dos pontos de uso (pode ser um ponto no mapa ou KML).",
+        "Dados da bomba, do poço ou do pivô, se já existirem.",
+        "Área irrigada e culturas, no caso de irrigação."
       ],
       "normas": [
         "Lei 9.433/1997 (Política Nacional de Recursos Hídricos)",
-        "Lei estadual (GO) 13.123/1997",
-        "Lei 12.334/2010 (Segurança de Barragens), quando aplicável"
+        "Lei estadual (GO) 13.123/1997 (Política Estadual de Recursos Hídricos)",
+        "Lei 12.334/2010 (Segurança de Barragens), quando aplicável",
+        "IN SEMAD 19/2026 (barragens em empreendimentos agropecuários)"
+      ],
+      "tipos": [
+        {
+          "id": "industria",
+          "titulo": "Outorga para indústria",
+          "imagem": "foto-industria-960.jpg",
+          "texto": "Água de poço tubular ou de rio para processo, limpeza e consumo, e lançamento do efluente tratado. Fazemos o balanço hídrico da planta e o pedido de cada ponto.",
+          "alt": "Usina agroindustrial com chaminé, galpões e tanques, cercada por canavial",
+          "credito": {
+            "autor": "Elmschrat",
+            "licenca": "CC BY-SA 3.0",
+            "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:2011-sao-martinho-sugar-mill-brazil.JPG"
+          }
+        },
+        {
+          "id": "irrigacao",
+          "titulo": "Outorga para irrigação",
+          "imagem": "foto-irrigacao-pivo-960.jpg",
+          "texto": "Pivô central, gotejamento ou aspersão. Calculamos a necessidade da cultura, a vazão e o horário de bombeamento por mês, que é o que a SEMAD avalia.",
+          "alt": "Pivô central irrigando lavoura de feijão em solo vermelho de Cerrado",
+          "credito": {
+            "autor": "Tiago Firmino B.",
+            "licenca": "CC BY 3.0",
+            "licenca_url": "https://creativecommons.org/licenses/by/3.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Lavoura_de_feij%C3%A3o_(Phaseolus_vulgaris)_irrigado_na_Fazenda_PCPER_Lote_80_Propriet%C3%A1rio_Ezimar._-_panoramio.jpg"
+          }
+        },
+        {
+          "id": "barramento",
+          "titulo": "Outorga para barramento",
+          "imagem": "foto-barragem-fazenda-960.jpg",
+          "texto": "Barragens e represas para irrigação, dessedentação animal ou reserva. Levantamento topográfico, área alagada, volume, vazão a manter no rio e enquadramento na segurança de barragens.",
+          "alt": "Represa de fazenda em Flores de Goiás com espelho d’água e mata ao fundo",
+          "credito": {
+            "autor": "charlen",
+            "licenca": "CC BY-SA 3.0",
+            "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Barragem_do_jacar%C3%A9_na_fazenda_em_Flores_de_Goias_-_panoramio_(1).jpg"
+          }
+        },
+        {
+          "id": "captacao",
+          "titulo": "Outorga para captação direta",
+          "imagem": "foto-captacao-rio-960.jpg",
+          "texto": "Bombeamento direto do rio, córrego ou nascente, sem barragem. Localizamos o ponto, medimos ou estimamos a vazão e fazemos o pedido ou o registro de uso insignificante.",
+          "alt": "Conjunto motobomba na margem do rio captando água para irrigação",
+          "credito": {
+            "autor": "Chris Morgan",
+            "licenca": "CC BY-SA 2.0",
+            "licenca_url": "https://creativecommons.org/licenses/by-sa/2.0/deed.pt",
+            "fonte": "https://commons.wikimedia.org/wiki/File:Irrigation_pump_at_work_on_New_River_Ancholme_-_geograph.org.uk_-_5073046.jpg"
+          }
+        }
       ]
     },
     {

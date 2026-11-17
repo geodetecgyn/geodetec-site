@@ -152,7 +152,7 @@
       const a = BASE + esc(f.arquivo), m = /-960\.jpg$/.test(f.arquivo);
       const tag = `<img src="${a}" alt="${esc(f.alt || f.legenda)}" loading="lazy" decoding="async"${f.pos ? ` style="object-position:${esc(f.pos)}"` : ''}>`;
       const larg = f.largura || 960, s16 = larg >= 1600 ? `, ${a.replace(/-960\.jpg$/, '-1600.webp')} 1600w` : '';
-      return m ? `<picture><source type="image/webp" srcset="${a.replace(/-960\.jpg$/, '-480.webp')} 480w, ${a.replace(/\.jpg$/, '.webp')} 960w${s16}" sizes="(min-width:1024px) 640px, 100vw">${tag}</picture>` : tag;
+      return m ? `<picture><source type="image/webp" srcset="${a.replace(/-960\.jpg$/, '-480.webp')} 480w, ${a.replace(/\.jpg$/, '.webp')} 960w${s16}" sizes="(min-width:1024px) 320px, (min-width:640px) 46vw, 100vw">${tag}</picture>` : tag;
     };
     return lista.map(f => `<figure>${f.arquivo
       ? `${img(f)}${f.legenda ? `<figcaption>${esc(f.legenda)}</figcaption>` : ''}`
@@ -346,6 +346,7 @@
     itr: () => 'Olá, Breno! Recebi um Termo de Intimação do ITR e preciso de um laudo técnico. Podemos conversar?',
     agrimensura: () => 'Olá, Breno! Preciso de um serviço de agrimensura / georreferenciamento. Podemos conversar?',
     car_to: () => 'Olá, Breno! Preciso de CAR no Tocantins. Podemos conversar?',
+    agua: () => 'Olá, Breno! Preciso de outorga de água ou licenciamento da atividade rural. Podemos conversar?',
     dai: () => 'Olá, Breno! Preciso de ajuda com a DAI no Sistema Ipê. Podemos conversar?',
     parceria: () => 'Olá, Breno! Sou profissional da área e tenho interesse em parceria técnica com a GeoDetec.',
     servico: (c, el) => `Olá, Breno! Vim pelo site da GeoDetec e gostaria de um orçamento de: ${el.dataset.servico}.`
