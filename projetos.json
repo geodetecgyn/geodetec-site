@@ -286,6 +286,79 @@
           "legenda": "Regularização fundiária: serviços"
         }
       ]
+    },
+    {
+      "id": "campo-agrimensura",
+      "oculto": true,
+      "categoria": "",
+      "titulo": "Agrimensura em campo",
+      "descricao": "",
+      "imagens": [
+        {
+          "pasta": "campo",
+          "arquivo": "agri-base-rover",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
+          "legenda": "Base e rover GNSS RTK no imóvel"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-app-corrego",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS na margem de um córrego com mata ciliar, para delimitar APP.",
+          "legenda": "Margem de córrego: limite de APP"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-divisa-pasto",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "legenda": "Vértice na divisa, em pastagem"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-nivelamento",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Técnico nivelando o tripé da base GNSS antes do levantamento.",
+          "legenda": "Nivelamento da base antes da coleta"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-lavoura",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS em área de lavoura preparada, com mata ao fundo.",
+          "legenda": "Coleta de pontos em área de lavoura"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-eucalipto",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS sobre bastão dentro de plantio de eucalipto.",
+          "legenda": "Levantamento em área de silvicultura"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-divisa-estrada",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
+          "legenda": "Cerca de divisa junto à estrada"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-base-detalhe",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
+          "legenda": "Base e rover prontos para o levantamento"
+        }
+      ]
     }
   ]
 }

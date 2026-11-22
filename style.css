@@ -700,3 +700,16 @@ mark.ph{background:rgba(255,233,90,.16);color:var(--perimetro);border:1px dashed
 /* v8 · revisão: legendas menores nos mapas do celular */
 @media (max-width:479px){.mapa-card .vis-leg{left:6px;bottom:6px;right:auto;max-width:calc(100% - 12px);padding:3px 7px;border-radius:7px;font-size:.66rem;line-height:1.25}}
 @media (max-width:359px){.atalho,.amb-tile{padding-left:12px;padding-right:12px}.atalho b,.amb-tile b{font-size:.84rem;overflow-wrap:anywhere}}
+/* v9 · fotos de campo da agrimensura */
+.campo-agri{margin-top:44px}
+.campo-tit{display:flex;align-items:center;gap:10px;font-size:1rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin:0 0 14px;color:var(--verde-claro)}
+.campo-tit .i{width:20px;height:20px}
+.campo-tira{list-style:none;scroll-padding-inline:var(--gutter);margin:0 calc(-1*var(--gutter));padding:2px var(--gutter) 12px;display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin}
+.campo-tira li{flex:0 0 62%;scroll-snap-align:start}
+.campo-foto{position:relative;display:block;width:100%;padding:0;border:1px solid var(--linha);border-radius:var(--raio);overflow:hidden;background:#0b1236;aspect-ratio:3/4;cursor:zoom-in}
+.campo-foto picture,.campo-foto img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.campo-foto:hover img,.campo-foto:focus-visible img{transform:scale(1.04)}
+.campo-leg{position:absolute;left:8px;right:8px;bottom:8px;padding:6px 10px;border-radius:10px;background:rgba(5,8,31,.74);color:#fff;font-size:.76rem;line-height:1.3;text-align:left}
+@media (min-width:640px){.campo-tira li{flex-basis:31%}}
+@media (min-width:1024px){.campo-tira{display:grid;grid-template-columns:repeat(4,1fr);overflow:visible;margin-inline:0;padding-inline:0}.campo-tira li{flex:auto}}
+@media (prefers-reduced-motion:reduce){.campo-foto img{transition:none}}

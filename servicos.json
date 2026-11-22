@@ -67,6 +67,29 @@
         "Decreto 4.449/2002 e Decreto 12.689/2025",
         "Norma Técnica para Georreferenciamento de Imóveis Rurais: INCRA (3ª ed.)",
         "ABNT NBR 13133: Execução de levantamento topográfico"
+      ],
+      "fotos": [
+        {
+          "arquivo": "agri-base-rover-960.jpg",
+          "legenda": "Base e rover GNSS RTK no imóvel",
+          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-divisa-pasto-960.jpg",
+          "legenda": "Vértice na divisa, em pastagem",
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-divisa-estrada-960.jpg",
+          "legenda": "Cerca de divisa junto à estrada",
+          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
+          "largura": 960,
+          "pos": "50% 25%"
+        }
       ]
     },
     {
@@ -99,6 +122,29 @@
         "Lei 12.651/2012, arts. 4º (APP), 12 a 18 (Reserva Legal)",
         "O registro no CAR desobriga a averbação da RL (Lei 12.651/2012, art. 18, § 4º)",
         "Lei 6.015/1973 (Registros Públicos)"
+      ],
+      "fotos": [
+        {
+          "arquivo": "agri-app-corrego-960.jpg",
+          "legenda": "Margem de córrego: limite de APP",
+          "alt": "Receptor GNSS na margem de um córrego com mata ciliar, para delimitar APP.",
+          "largura": 960,
+          "pos": "50% 25%"
+        },
+        {
+          "arquivo": "agri-divisa-pasto-960.jpg",
+          "legenda": "Vértice na divisa, em pastagem",
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-eucalipto-960.jpg",
+          "legenda": "Levantamento em área de silvicultura",
+          "alt": "Receptor GNSS sobre bastão dentro de plantio de eucalipto.",
+          "largura": 960,
+          "pos": "50% 25%"
+        }
       ]
     },
     {
@@ -128,6 +174,29 @@
         "Lei 12.651/2012, art. 26 (supressão de vegetação nativa)",
         "Condicionantes da autorização de supressão",
         "ABNT NBR 13133 (levantamento topográfico)"
+      ],
+      "fotos": [
+        {
+          "arquivo": "agri-divisa-estrada-960.jpg",
+          "legenda": "Cerca de divisa junto à estrada",
+          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
+          "largura": 960,
+          "pos": "50% 25%"
+        },
+        {
+          "arquivo": "agri-divisa-pasto-960.jpg",
+          "legenda": "Vértice na divisa, em pastagem",
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-base-detalhe-960.jpg",
+          "legenda": "Base e rover prontos para o levantamento",
+          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
+          "largura": 960,
+          "pos": "50% 30%"
+        }
       ]
     },
     {
@@ -163,6 +232,29 @@
         "Lei 5.868/1972 (SNCR e fração mínima de parcelamento)",
         "Lei 9.393/1996 (ITR)",
         "Lei 13.465/2017 (REURB)"
+      ],
+      "fotos": [
+        {
+          "arquivo": "agri-base-rover-960.jpg",
+          "legenda": "Base e rover GNSS RTK no imóvel",
+          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-lavoura-960.jpg",
+          "legenda": "Coleta de pontos em área de lavoura",
+          "alt": "Receptor GNSS em área de lavoura preparada, com mata ao fundo.",
+          "largura": 960,
+          "pos": "50% 25%"
+        },
+        {
+          "arquivo": "agri-divisa-pasto-960.jpg",
+          "legenda": "Vértice na divisa, em pastagem",
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "largura": 960,
+          "pos": "50% 30%"
+        }
       ]
     },
     {
@@ -953,6 +1045,29 @@
       "normas": [
         "ABNT NBR 13133: Execução de levantamento topográfico",
         "RBAC-E nº 94 (ANAC) e ICA 100-40 (DECEA) para operação de drones"
+      ],
+      "fotos": [
+        {
+          "arquivo": "agri-nivelamento-960.jpg",
+          "legenda": "Nivelamento da base antes da coleta",
+          "alt": "Técnico nivelando o tripé da base GNSS antes do levantamento.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-base-detalhe-960.jpg",
+          "legenda": "Base e rover prontos para o levantamento",
+          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
+          "largura": 960,
+          "pos": "50% 30%"
+        },
+        {
+          "arquivo": "agri-lavoura-960.jpg",
+          "legenda": "Coleta de pontos em área de lavoura",
+          "alt": "Receptor GNSS em área de lavoura preparada, com mata ao fundo.",
+          "largura": 960,
+          "pos": "50% 25%"
+        }
       ]
     },
     {
