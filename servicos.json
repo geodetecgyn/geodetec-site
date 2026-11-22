@@ -70,11 +70,11 @@
       ],
       "fotos": [
         {
-          "arquivo": "agri-base-rover-960.jpg",
-          "legenda": "Base e rover GNSS RTK no imóvel",
-          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
+          "arquivo": "agri-base-divisa-960.jpg",
+          "legenda": "Base e rover na cerca de divisa",
+          "alt": "Base GNSS em tripé e rover junto a um mourão de cerca, em pastagem.",
           "largura": 960,
-          "pos": "50% 30%"
+          "pos": "50% 25%"
         },
         {
           "arquivo": "agri-divisa-pasto-960.jpg",
@@ -84,11 +84,11 @@
           "pos": "50% 30%"
         },
         {
-          "arquivo": "agri-divisa-estrada-960.jpg",
-          "legenda": "Cerca de divisa junto à estrada",
-          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
+          "arquivo": "agri-base-serra-960.jpg",
+          "legenda": "Base GNSS em área de serra",
+          "alt": "Base GNSS montada em tripé numa encosta de pastagem, com morros ao fundo.",
           "largura": 960,
-          "pos": "50% 25%"
+          "pos": "50% 30%"
         }
       ]
     },
@@ -132,16 +132,16 @@
           "pos": "50% 25%"
         },
         {
-          "arquivo": "agri-divisa-pasto-960.jpg",
-          "legenda": "Vértice na divisa, em pastagem",
-          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "arquivo": "agri-rio-960.jpg",
+          "legenda": "Levantamento na margem do rio",
+          "alt": "Rover GNSS na mão do técnico, na margem de um rio com corredeira.",
           "largura": 960,
-          "pos": "50% 30%"
+          "pos": "50% 60%"
         },
         {
-          "arquivo": "agri-eucalipto-960.jpg",
-          "legenda": "Levantamento em área de silvicultura",
-          "alt": "Receptor GNSS sobre bastão dentro de plantio de eucalipto.",
+          "arquivo": "agri-area-alagada-960.jpg",
+          "legenda": "Medição em área alagada",
+          "alt": "Dois receptores GNSS sobre área alagada com plantas aquáticas.",
           "largura": 960,
           "pos": "50% 25%"
         }
@@ -177,13 +177,6 @@
       ],
       "fotos": [
         {
-          "arquivo": "agri-divisa-estrada-960.jpg",
-          "legenda": "Cerca de divisa junto à estrada",
-          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
-          "largura": 960,
-          "pos": "50% 25%"
-        },
-        {
           "arquivo": "agri-divisa-pasto-960.jpg",
           "legenda": "Vértice na divisa, em pastagem",
           "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
@@ -191,11 +184,18 @@
           "pos": "50% 30%"
         },
         {
-          "arquivo": "agri-base-detalhe-960.jpg",
-          "legenda": "Base e rover prontos para o levantamento",
-          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
+          "arquivo": "agri-base-divisa-960.jpg",
+          "legenda": "Base e rover na cerca de divisa",
+          "alt": "Base GNSS em tripé e rover junto a um mourão de cerca, em pastagem.",
           "largura": 960,
-          "pos": "50% 30%"
+          "pos": "50% 25%"
+        },
+        {
+          "arquivo": "agri-eucalipto-960.jpg",
+          "legenda": "Levantamento em área de silvicultura",
+          "alt": "Receptor GNSS sobre bastão dentro de plantio de eucalipto.",
+          "largura": 960,
+          "pos": "50% 25%"
         }
       ]
     },
@@ -235,9 +235,9 @@
       ],
       "fotos": [
         {
-          "arquivo": "agri-base-rover-960.jpg",
-          "legenda": "Base e rover GNSS RTK no imóvel",
-          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
+          "arquivo": "agri-base-serra-960.jpg",
+          "legenda": "Base GNSS em área de serra",
+          "alt": "Base GNSS montada em tripé numa encosta de pastagem, com morros ao fundo.",
           "largura": 960,
           "pos": "50% 30%"
         },
@@ -561,12 +561,12 @@
           "titulo": "Outorga para indústria",
           "imagem": "foto-industria-960.jpg",
           "texto": "Água de poço tubular ou de rio para processo, limpeza e consumo, e lançamento do efluente tratado. Fazemos o balanço hídrico da planta e o pedido de cada ponto.",
-          "alt": "Usina agroindustrial com chaminé, galpões e tanques, cercada por canavial",
+          "alt": "Pá carregadeira movimentando bagaço de cana no pátio de uma usina sucroenergética",
           "credito": {
-            "autor": "Elmschrat",
+            "autor": "Jonathan Wilkins",
             "licenca": "CC BY-SA 3.0",
             "licenca_url": "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
-            "fonte": "https://commons.wikimedia.org/wiki/File:2011-sao-martinho-sugar-mill-brazil.JPG"
+            "fonte": "https://commons.wikimedia.org/wiki/File:Bagasse_being_loaded.jpg"
           }
         },
         {
@@ -851,13 +851,6 @@
       ],
       "fotos": [
         {
-          "arquivo": "campo-biologa-960.jpg",
-          "legenda": "Campanha de campo",
-          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado.",
-          "largura": 1080,
-          "pos": "50% 35%"
-        },
-        {
           "arquivo": "fauna-onca-parda-960.jpg",
           "legenda": "Onça-parda em armadilha fotográfica",
           "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica.",
@@ -1048,16 +1041,9 @@
       ],
       "fotos": [
         {
-          "arquivo": "agri-nivelamento-960.jpg",
-          "legenda": "Nivelamento da base antes da coleta",
-          "alt": "Técnico nivelando o tripé da base GNSS antes do levantamento.",
-          "largura": 960,
-          "pos": "50% 30%"
-        },
-        {
-          "arquivo": "agri-base-detalhe-960.jpg",
-          "legenda": "Base e rover prontos para o levantamento",
-          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
+          "arquivo": "agri-base-serra-960.jpg",
+          "legenda": "Base GNSS em área de serra",
+          "alt": "Base GNSS montada em tripé numa encosta de pastagem, com morros ao fundo.",
           "largura": 960,
           "pos": "50% 30%"
         },
@@ -1065,6 +1051,13 @@
           "arquivo": "agri-lavoura-960.jpg",
           "legenda": "Coleta de pontos em área de lavoura",
           "alt": "Receptor GNSS em área de lavoura preparada, com mata ao fundo.",
+          "largura": 960,
+          "pos": "50% 25%"
+        },
+        {
+          "arquivo": "agri-base-divisa-960.jpg",
+          "legenda": "Base e rover na cerca de divisa",
+          "alt": "Base GNSS em tripé e rover junto a um mourão de cerca, em pastagem.",
           "largura": 960,
           "pos": "50% 25%"
         }

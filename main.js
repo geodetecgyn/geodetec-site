@@ -168,7 +168,7 @@
     const VISIVEIS = PROJETOS.filter(p => !p.oculto); CREDITO = d.credito_satelite || '';
     if (!grade || !filtros) return;
     const cont = c => VISIVEIS.filter(p => !c || p.categoria === c).length;
-    const cats = ['', ...d.categorias];
+    const cats = ['', ...d.categorias.filter(c => cont(c))];   // categoria sem projeto não vira botão vazio
     filtros.innerHTML = cats.map(c => `<button type="button" class="filtro" data-cat="${esc(c)}" aria-pressed="${!c}">${c ? esc(c) : 'Todos'}${cont(c) ? ` <small>${cont(c)}</small>` : ''}</button>`).join('');
     const render = cat => {
       const lista = VISIVEIS.filter(p => !cat || p.categoria === cat);

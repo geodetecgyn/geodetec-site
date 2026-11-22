@@ -52,6 +52,112 @@
       ]
     },
     {
+      "id": "georreferenciamento-imoveis-rurais",
+      "categoria": "Georreferenciamento",
+      "titulo": "Georreferenciamento de imóveis rurais",
+      "periodo": "Imóveis rurais em Goiás",
+      "servico": "georreferenciamento-sigef",
+      "descricao": "Levantamento dos vértices com base e rover GNSS RTK em divisas de pastagem, lavoura, silvicultura e áreas de serra, para certificação no SIGEF e peças técnicas do cartório.",
+      "imagens": [
+        {
+          "pasta": "campo",
+          "arquivo": "agri-base-serra",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Base GNSS montada em tripé numa encosta de pastagem, com morros ao fundo.",
+          "legenda": "Base GNSS em área de serra"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-base-divisa",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Base GNSS em tripé e rover junto a um mourão de cerca, em pastagem.",
+          "legenda": "Base e rover na cerca de divisa"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-divisa-pasto",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS sobre bastão junto à cerca de divisa em pastagem, com árvore ao fundo.",
+          "legenda": "Vértice na divisa, em pastagem"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-lavoura",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS em área de lavoura preparada, com mata ao fundo.",
+          "legenda": "Coleta de pontos em área de lavoura"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-eucalipto",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS sobre bastão dentro de plantio de eucalipto.",
+          "legenda": "Levantamento em área de silvicultura"
+        }
+      ]
+    },
+    {
+      "id": "app-reserva-legal-car",
+      "categoria": "CAR/DAI",
+      "titulo": "APP e Reserva Legal para CAR e DAI",
+      "periodo": "Imóveis rurais em Goiás",
+      "servico": "reserva-legal-app",
+      "descricao": "Margens de rios, córregos e áreas alagadas medidas em campo com GNSS e cruzadas com imagens de satélite para delimitar APP e Reserva Legal no CAR e na DAI.",
+      "imagens": [
+        {
+          "pasta": "campo",
+          "arquivo": "agri-app-corrego",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Receptor GNSS na margem de um córrego com mata ciliar, para delimitar APP.",
+          "legenda": "Margem de córrego: limite de APP"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-rio",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Rover GNSS na mão do técnico, na margem de um rio com corredeira.",
+          "legenda": "Levantamento na margem do rio"
+        },
+        {
+          "pasta": "campo",
+          "arquivo": "agri-area-alagada",
+          "largura": 960,
+          "altura": 1280,
+          "alt": "Dois receptores GNSS sobre área alagada com plantas aquáticas.",
+          "legenda": "Medição em área alagada"
+        },
+        {
+          "arquivo": "mapa_app_reserva_legal",
+          "largura": 2451,
+          "altura": 2200,
+          "alt": "Mapa de imóvel rural sobre imagem de satélite, com perímetro em amarelo, Área de Preservação Permanente em azul-claro e Reserva Legal em verde hachurado; entorno escurecido.",
+          "legenda": "APP e Reserva Legal delimitadas sobre imagem de satélite.",
+          "legenda_mapa": [
+            [
+              "#FFE95A",
+              "Perímetro"
+            ],
+            [
+              "#3FD0FF",
+              "APP"
+            ],
+            [
+              "#7DDB5C",
+              "Reserva Legal"
+            ]
+          ],
+          "satelite": true
+        }
+      ]
+    },
+    {
       "id": "laudo-prodes-imovel-rural",
       "categoria": "Laudos (ITR, VTN, PRODES)",
       "titulo": "Laudo PRODES com análise multitemporal",
@@ -121,14 +227,6 @@
           "altura": 837,
           "alt": "Onça-parda caminhando na mata, registrada por armadilha fotográfica.",
           "legenda": "Onça-parda registrada por armadilha fotográfica."
-        },
-        {
-          "pasta": "campo",
-          "arquivo": "campo-biologa",
-          "largura": 1080,
-          "altura": 1080,
-          "alt": "Bióloga de costas fotografando a vegetação à beira de uma estrada de terra no Cerrado.",
-          "legenda": "Registro fotográfico em campanha de campo."
         },
         {
           "pasta": "campo",
@@ -296,11 +394,11 @@
       "imagens": [
         {
           "pasta": "campo",
-          "arquivo": "agri-base-rover",
+          "arquivo": "agri-base-serra",
           "largura": 960,
           "altura": 1280,
-          "alt": "Técnico da GeoDetec ajustando o rover GNSS ao lado da base montada em tripé, em área rural.",
-          "legenda": "Base e rover GNSS RTK no imóvel"
+          "alt": "Base GNSS montada em tripé numa encosta de pastagem, com morros ao fundo.",
+          "legenda": "Base GNSS em área de serra"
         },
         {
           "pasta": "campo",
@@ -320,11 +418,11 @@
         },
         {
           "pasta": "campo",
-          "arquivo": "agri-nivelamento",
+          "arquivo": "agri-base-divisa",
           "largura": 960,
           "altura": 1280,
-          "alt": "Técnico nivelando o tripé da base GNSS antes do levantamento.",
-          "legenda": "Nivelamento da base antes da coleta"
+          "alt": "Base GNSS em tripé e rover junto a um mourão de cerca, em pastagem.",
+          "legenda": "Base e rover na cerca de divisa"
         },
         {
           "pasta": "campo",
@@ -344,19 +442,19 @@
         },
         {
           "pasta": "campo",
-          "arquivo": "agri-divisa-estrada",
+          "arquivo": "agri-rio",
           "largura": 960,
           "altura": 1280,
-          "alt": "Receptor GNSS na cerca de divisa, ao lado de estrada de terra.",
-          "legenda": "Cerca de divisa junto à estrada"
+          "alt": "Rover GNSS na mão do técnico, na margem de um rio com corredeira.",
+          "legenda": "Levantamento na margem do rio"
         },
         {
           "pasta": "campo",
-          "arquivo": "agri-base-detalhe",
+          "arquivo": "agri-area-alagada",
           "largura": 960,
           "altura": 1280,
-          "alt": "Base GNSS em tripé e rover ao fundo, em campo aberto.",
-          "legenda": "Base e rover prontos para o levantamento"
+          "alt": "Dois receptores GNSS sobre área alagada com plantas aquáticas.",
+          "legenda": "Medição em área alagada"
         }
       ]
     }
